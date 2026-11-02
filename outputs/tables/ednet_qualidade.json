@@ -1,0 +1,23 @@
+{
+  "linhas_brutas": 89270654,
+  "nulos_timestamp": 0,
+  "nulos_action_type": 0,
+  "nulos_item_id": 0,
+  "nulos_source": 0,
+  "nulos_user_answer": 65886174,
+  "nulos_platform": 0,
+  "duplicadas": 75778,
+  "invalido_timestamp": 0,
+  "invalido_action_type": 0,
+  "invalido_item_id": 0,
+  "invalido_platform": 0,
+  "invalido_resposta": 0,
+  "invalido_respond_sem_questao": 0,
+  "linhas_removidas_invalidas": 0,
+  "arquivos_fora_de_ordem": 0,
+  "linhas_limpas": 89194876,
+  "respostas_intermediarias_descartadas": 5325940,
+  "questoes_sem_gabarito": 0,
+  "arquivos": 297915,
+  "usuarios_com_dados": 297915
+}

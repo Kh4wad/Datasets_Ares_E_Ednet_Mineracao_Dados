@@ -1,0 +1,251 @@
+{
+  "Q1": [
+    {
+      "metrica": "Nº de interações",
+      "ares_rho": 0.0789,
+      "ares_p": 0.35237479246181974,
+      "ares_ic95": [
+        -0.0856,
+        0.2397
+      ],
+      "ednet_rho": 0.1491,
+      "ednet_p": 0.0,
+      "ednet_ic95": [
+        0.1359,
+        0.1636
+      ],
+      "conclusao": "Parcialmente convergente"
+    },
+    {
+      "metrica": "Nº de sessões",
+      "ares_rho": 0.0818,
+      "ares_p": 0.33509592158394136,
+      "ares_ic95": [
+        -0.0874,
+        0.2484
+      ],
+      "ednet_rho": 0.0826,
+      "ednet_p": 1.5231768092724452e-115,
+      "ednet_ic95": [
+        0.0687,
+        0.0972
+      ],
+      "conclusao": "Convergente (sem efeito nas duas)"
+    },
+    {
+      "metrica": "Dias ativos",
+      "ares_rho": 0.037,
+      "ares_p": 0.6627968603087284,
+      "ares_ic95": [
+        -0.1496,
+        0.2112
+      ],
+      "ednet_rho": 0.0701,
+      "ednet_p": 1.3839353751487391e-83,
+      "ednet_ic95": [
+        0.057,
+        0.0844
+      ],
+      "conclusao": "Convergente (sem efeito nas duas)"
+    }
+  ],
+  "Q5": [
+    {
+      "metrica": "Nº de interações",
+      "ares_rho": 0.001,
+      "ares_p": 0.9906642060766341,
+      "ares_ic95": [
+        -0.1659,
+        0.1769
+      ],
+      "ednet_rho": 0.0393,
+      "ednet_p": 4.422978188629517e-16,
+      "ednet_ic95": [
+        0.0248,
+        0.0524
+      ],
+      "conclusao": "Convergente (sem efeito nas duas)"
+    },
+    {
+      "metrica": "Nº de sessões",
+      "ares_rho": 0.0301,
+      "ares_p": 0.7233053754754879,
+      "ares_ic95": [
+        -0.1433,
+        0.2
+      ],
+      "ednet_rho": 0.0233,
+      "ednet_p": 1.4609436062537186e-06,
+      "ednet_ic95": [
+        0.01,
+        0.0374
+      ],
+      "conclusao": "Convergente (sem efeito nas duas)"
+    },
+    {
+      "metrica": "Dias ativos",
+      "ares_rho": 0.0091,
+      "ares_p": 0.9146911583292773,
+      "ares_ic95": [
+        -0.1731,
+        0.1879
+      ],
+      "ednet_rho": 0.0223,
+      "ednet_p": 3.97269177783324e-06,
+      "ednet_ic95": [
+        0.0089,
+        0.036
+      ],
+      "conclusao": "Convergente (sem efeito nas duas)"
+    }
+  ],
+  "Q4": [
+    {
+      "funcao": "Responder questões",
+      "ares_atividade": "Responder questões/tarefas",
+      "ednet_atividade": "Prática por parte (sprint)",
+      "ares_rho": -0.024,
+      "ares_p": 0.7416126185469961,
+      "ednet_rho": -0.109,
+      "ednet_p": 2.728974739543292e-292,
+      "ares_rho_bruto": 0.0015,
+      "ednet_rho_bruto": 0.5863,
+      "ares_p_holm": 1.0,
+      "ednet_p_holm": 1.0915898958173168e-291,
+      "conclusao": "Parcialmente convergente"
+    },
+    {
+      "funcao": "Ver feedback/explicação",
+      "ares_atividade": "Visualização de feedback/nota",
+      "ednet_atividade": "Leitura de explicações (feedback)",
+      "ares_rho": 0.1407,
+      "ares_p": 0.05223455540081166,
+      "ednet_rho": 0.0622,
+      "ednet_p": 4.46324160093895e-96,
+      "ares_rho_bruto": 0.3058,
+      "ednet_rho_bruto": 0.7159,
+      "ares_p_holm": 0.3656418878056816,
+      "ednet_p_holm": 4.46324160093895e-96,
+      "conclusao": "Convergente (sem efeito nas duas)"
+    },
+    {
+      "funcao": "Estudar conteúdo",
+      "ares_atividade": "Leitura de textos",
+      "ednet_atividade": "Aulas (vídeo/texto)",
+      "ares_rho": 0.3143,
+      "ares_p": 9.539064162368316e-06,
+      "ednet_rho": 0.2443,
+      "ednet_p": 0.0,
+      "ares_rho_bruto": 0.0862,
+      "ednet_rho_bruto": 0.5658,
+      "ares_p_holm": 9.539064162368316e-05,
+      "ednet_p_holm": 0.0,
+      "conclusao": "Convergente"
+    },
+    {
+      "funcao": "Recursos de apoio/revisão",
+      "ares_atividade": "Vocabulário (palavras e traduções)",
+      "ednet_atividade": "Caderno de erros/anotações",
+      "ares_rho": -0.0922,
+      "ares_p": 0.20482266360232876,
+      "ednet_rho": 0.1744,
+      "ednet_p": 0.0,
+      "ares_rho_bruto": 0.1562,
+      "ednet_rho_bruto": 0.3103,
+      "ares_p_holm": 1.0,
+      "ednet_p_holm": 0.0,
+      "conclusao": "Parcialmente convergente"
+    },
+    {
+      "funcao": "Atividade de entrada",
+      "ares_atividade": "Tutorial",
+      "ednet_atividade": "Diagnóstico inicial",
+      "ares_rho": -0.0264,
+      "ares_p": 0.7165805667950382,
+      "ednet_rho": -0.0967,
+      "ednet_p": 1.8407622955207371e-230,
+      "ares_rho_bruto": -0.5586,
+      "ednet_rho_bruto": -0.7913,
+      "ares_p_holm": 1.0,
+      "ednet_p_holm": 5.522286886562212e-230,
+      "conclusao": "Convergente (sem efeito nas duas)"
+    }
+  ],
+  "Q10": [
+    {
+      "funcao": "Responder questões",
+      "ares_atividade": "Responder questões/tarefas",
+      "ednet_atividade": "Prática por parte (sprint)",
+      "ares_pct_eventos": 47.83,
+      "ares_pct_usuarios": 100.0,
+      "ednet_pct_eventos": 72.44,
+      "ednet_pct_usuarios": 33.3,
+      "ares_rho_parcial": 0.0391,
+      "ares_p": 0.6465794325426594,
+      "ednet_rho_parcial": 0.1632,
+      "ednet_p": 0.0,
+      "ares_p_holm": 1.0,
+      "conclusao": "Parcialmente convergente"
+    },
+    {
+      "funcao": "Ver feedback/explicação",
+      "ares_atividade": "Visualização de feedback/nota",
+      "ednet_atividade": "Leitura de explicações (feedback)",
+      "ares_pct_eventos": 0.55,
+      "ares_pct_usuarios": 22.4,
+      "ednet_pct_eventos": NaN,
+      "ednet_pct_usuarios": 36.3,
+      "ares_rho_parcial": -0.0427,
+      "ares_p": 0.6162841871134497,
+      "ednet_rho_parcial": 0.1422,
+      "ednet_p": 2.200298145137284e-295,
+      "ares_p_holm": 1.0,
+      "conclusao": "Parcialmente convergente"
+    },
+    {
+      "funcao": "Estudar conteúdo",
+      "ares_atividade": "Leitura de textos",
+      "ednet_atividade": "Aulas (vídeo/texto)",
+      "ares_pct_eventos": 10.84,
+      "ares_pct_usuarios": 100.0,
+      "ednet_pct_eventos": NaN,
+      "ednet_pct_usuarios": 14.4,
+      "ares_rho_parcial": -0.0306,
+      "ares_p": 0.7199943530651339,
+      "ednet_rho_parcial": 0.0356,
+      "ednet_p": 5.57680037924671e-20,
+      "ares_p_holm": 1.0,
+      "conclusao": "Convergente (sem efeito nas duas)"
+    },
+    {
+      "funcao": "Recursos de apoio/revisão",
+      "ares_atividade": "Vocabulário (palavras e traduções)",
+      "ednet_atividade": "Caderno de erros/anotações",
+      "ares_pct_eventos": 11.81,
+      "ares_pct_usuarios": 96.9,
+      "ednet_pct_eventos": 7.89,
+      "ednet_pct_usuarios": 13.5,
+      "ares_rho_parcial": 0.1716,
+      "ares_p": 0.04261024321674157,
+      "ednet_rho_parcial": 0.0395,
+      "ednet_p": 3.2889498200062833e-24,
+      "ares_p_holm": 0.3834921889506741,
+      "conclusao": "Convergente (sem efeito nas duas)"
+    },
+    {
+      "funcao": "Atividade de entrada",
+      "ares_atividade": "Tutorial",
+      "ednet_atividade": "Diagnóstico inicial",
+      "ares_pct_eventos": 0.89,
+      "ares_pct_usuarios": 100.0,
+      "ednet_pct_eventos": 7.42,
+      "ednet_pct_usuarios": 96.1,
+      "ares_rho_parcial": -0.2342,
+      "ares_p": 0.0053565800916281,
+      "ednet_rho_parcial": -0.0456,
+      "ednet_p": 9.158888520363528e-32,
+      "ares_p_holm": 0.053565800916281,
+      "conclusao": "Convergente (sem efeito nas duas)"
+    }
+  ]
+}

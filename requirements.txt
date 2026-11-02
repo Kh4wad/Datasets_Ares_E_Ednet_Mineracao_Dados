@@ -1,0 +1,14 @@
+pandas>=2.2
+numpy>=1.26
+scipy>=1.13
+matplotlib>=3.8
+seaborn>=0.13
+scikit-learn>=1.5
+joblib>=1.3
+openpyxl>=3.1
+gdown>=5.1
+ipykernel>=6.0      # para abrir/rodar os notebooks no VS Code ou Jupyter
+nbconvert>=7.0      # para "python run_all.py --notebooks"
+fastapi>=0.110      # API opcional (api/main.py)
+uvicorn>=0.29
+httpx>=0.27        # testes da API

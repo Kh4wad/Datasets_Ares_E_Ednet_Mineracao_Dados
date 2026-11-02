@@ -1,0 +1,296 @@
+{
+  "faltantes_192_alunos": {
+    "nota_pre": 7,
+    "nota_pos": 44,
+    "intrinsic_goal": 32,
+    "extrinsic_goal": 32,
+    "task_value": 32,
+    "control_learning_beliefs": 32,
+    "self_efficacy": 32,
+    "test_anxiety": 32
+  },
+  "populacao": {
+    "alunos_validos": 192,
+    "com_pre_pos_log": 141,
+    "motivacao_faltante": 22,
+    "regra": "alvo (nota no pós) faltante não é imputado: o aluno sai da modelagem. Motivação faltante (questionário não respondido) é imputada pela mediana DENTRO de cada dobra"
+  },
+  "alvo": {
+    "definicao": "aprovado = nota no pós-teste ≥ 6 (de 0 a 11)",
+    "positivos": 62,
+    "negativos": 79,
+    "proporcao_positivos": 0.4397
+  },
+  "resultados_cv": [
+    {
+      "conjunto": "Pré-teste",
+      "modelo": "Baseline (classe majoritária)",
+      "n_atributos": 1,
+      "roc_auc_media": 0.5,
+      "acuracia_balanceada_media": 0.5,
+      "f1_media": 0.0,
+      "roc_auc_dp": 0.0,
+      "acuracia_balanceada_dp": 0.0,
+      "f1_dp": 0.0
+    },
+    {
+      "conjunto": "Pré-teste",
+      "modelo": "Regressão Logística",
+      "n_atributos": 1,
+      "roc_auc_media": 0.6659,
+      "acuracia_balanceada_media": 0.6384,
+      "f1_media": 0.5312,
+      "roc_auc_dp": 0.115,
+      "acuracia_balanceada_dp": 0.092,
+      "f1_dp": 0.1325
+    },
+    {
+      "conjunto": "Pré-teste",
+      "modelo": "Árvore de Decisão",
+      "n_atributos": 1,
+      "roc_auc_media": 0.6252,
+      "acuracia_balanceada_media": 0.6152,
+      "f1_media": 0.4663,
+      "roc_auc_dp": 0.1069,
+      "acuracia_balanceada_dp": 0.0822,
+      "f1_dp": 0.1397
+    },
+    {
+      "conjunto": "Pré-teste",
+      "modelo": "Random Forest",
+      "n_atributos": 1,
+      "roc_auc_media": 0.6203,
+      "acuracia_balanceada_media": 0.6118,
+      "f1_media": 0.4737,
+      "roc_auc_dp": 0.1054,
+      "acuracia_balanceada_dp": 0.0829,
+      "f1_dp": 0.1383
+    },
+    {
+      "conjunto": "Pré + motivação",
+      "modelo": "Regressão Logística",
+      "n_atributos": 7,
+      "roc_auc_media": 0.6584,
+      "acuracia_balanceada_media": 0.6136,
+      "f1_media": 0.5016,
+      "roc_auc_dp": 0.109,
+      "acuracia_balanceada_dp": 0.0835,
+      "f1_dp": 0.1198
+    },
+    {
+      "conjunto": "Pré + motivação",
+      "modelo": "Árvore de Decisão",
+      "n_atributos": 7,
+      "roc_auc_media": 0.5589,
+      "acuracia_balanceada_media": 0.5105,
+      "f1_media": 0.3652,
+      "roc_auc_dp": 0.1012,
+      "acuracia_balanceada_dp": 0.079,
+      "f1_dp": 0.1186
+    },
+    {
+      "conjunto": "Pré + motivação",
+      "modelo": "Random Forest",
+      "n_atributos": 7,
+      "roc_auc_media": 0.5576,
+      "acuracia_balanceada_media": 0.5243,
+      "f1_media": 0.3727,
+      "roc_auc_dp": 0.0864,
+      "acuracia_balanceada_dp": 0.0647,
+      "f1_dp": 0.1263
+    },
+    {
+      "conjunto": "Interações",
+      "modelo": "Regressão Logística",
+      "n_atributos": 16,
+      "roc_auc_media": 0.5356,
+      "acuracia_balanceada_media": 0.54,
+      "f1_media": 0.4488,
+      "roc_auc_dp": 0.084,
+      "acuracia_balanceada_dp": 0.0801,
+      "f1_dp": 0.116
+    },
+    {
+      "conjunto": "Interações",
+      "modelo": "Árvore de Decisão",
+      "n_atributos": 16,
+      "roc_auc_media": 0.5635,
+      "acuracia_balanceada_media": 0.56,
+      "f1_media": 0.4704,
+      "roc_auc_dp": 0.0844,
+      "acuracia_balanceada_dp": 0.0912,
+      "f1_dp": 0.1492
+    },
+    {
+      "conjunto": "Interações",
+      "modelo": "Random Forest",
+      "n_atributos": 16,
+      "roc_auc_media": 0.5866,
+      "acuracia_balanceada_media": 0.5554,
+      "f1_media": 0.4446,
+      "roc_auc_dp": 0.0885,
+      "acuracia_balanceada_dp": 0.0875,
+      "f1_dp": 0.1325
+    },
+    {
+      "conjunto": "Pré + interações",
+      "modelo": "Regressão Logística",
+      "n_atributos": 17,
+      "roc_auc_media": 0.6317,
+      "acuracia_balanceada_media": 0.5933,
+      "f1_media": 0.5132,
+      "roc_auc_dp": 0.0983,
+      "acuracia_balanceada_dp": 0.086,
+      "f1_dp": 0.1129
+    },
+    {
+      "conjunto": "Pré + interações",
+      "modelo": "Árvore de Decisão",
+      "n_atributos": 17,
+      "roc_auc_media": 0.5729,
+      "acuracia_balanceada_media": 0.5644,
+      "f1_media": 0.4447,
+      "roc_auc_dp": 0.0909,
+      "acuracia_balanceada_dp": 0.0843,
+      "f1_dp": 0.1181
+    },
+    {
+      "conjunto": "Pré + interações",
+      "modelo": "Random Forest",
+      "n_atributos": 17,
+      "roc_auc_media": 0.627,
+      "acuracia_balanceada_media": 0.5884,
+      "f1_media": 0.4937,
+      "roc_auc_dp": 0.1077,
+      "acuracia_balanceada_dp": 0.092,
+      "f1_dp": 0.1325
+    },
+    {
+      "conjunto": "Todos",
+      "modelo": "Regressão Logística",
+      "n_atributos": 23,
+      "roc_auc_media": 0.628,
+      "acuracia_balanceada_media": 0.5888,
+      "f1_media": 0.5066,
+      "roc_auc_dp": 0.0905,
+      "acuracia_balanceada_dp": 0.0877,
+      "f1_dp": 0.1209
+    },
+    {
+      "conjunto": "Todos",
+      "modelo": "Árvore de Decisão",
+      "n_atributos": 23,
+      "roc_auc_media": 0.5705,
+      "acuracia_balanceada_media": 0.5628,
+      "f1_media": 0.4444,
+      "roc_auc_dp": 0.0965,
+      "acuracia_balanceada_dp": 0.0931,
+      "f1_dp": 0.1316
+    },
+    {
+      "conjunto": "Todos",
+      "modelo": "Random Forest",
+      "n_atributos": 23,
+      "roc_auc_media": 0.5982,
+      "acuracia_balanceada_media": 0.5606,
+      "f1_media": 0.4488,
+      "roc_auc_dp": 0.1024,
+      "acuracia_balanceada_dp": 0.1005,
+      "f1_dp": 0.1505
+    }
+  ],
+  "melhor_combinacao": {
+    "conjunto": "Pré-teste",
+    "modelo": "Regressão Logística",
+    "roc_auc": 0.6659,
+    "dp": 0.115
+  },
+  "ganho_pareado": [
+    {
+      "base": "Pré-teste",
+      "novo": "Pré + interações",
+      "modelo": "Regressão Logística",
+      "ganho_auc_medio": -0.0343,
+      "ic95_percentil_dobras": [
+        -0.2044,
+        0.0984
+      ],
+      "pct_dobras_com_ganho": 36.0
+    },
+    {
+      "base": "Pré-teste",
+      "novo": "Pré + motivação",
+      "modelo": "Regressão Logística",
+      "ganho_auc_medio": -0.0075,
+      "ic95_percentil_dobras": [
+        -0.121,
+        0.0894
+      ],
+      "pct_dobras_com_ganho": 46.0
+    },
+    {
+      "base": "Pré-teste",
+      "novo": "Todos",
+      "modelo": "Regressão Logística",
+      "ganho_auc_medio": -0.0379,
+      "ic95_percentil_dobras": [
+        -0.1841,
+        0.1122
+      ],
+      "pct_dobras_com_ganho": 38.0
+    },
+    {
+      "base": "Pré-teste",
+      "novo": "Pré + interações",
+      "modelo": "Random Forest",
+      "ganho_auc_medio": 0.0067,
+      "ic95_percentil_dobras": [
+        -0.2344,
+        0.2499
+      ],
+      "pct_dobras_com_ganho": 52.0
+    }
+  ],
+  "sensibilidade_imputacao": {
+    "mediana": {
+      "n": 141,
+      "roc_auc": 0.6566,
+      "dp": 0.1111
+    },
+    "KNN (k=5)": {
+      "n": 141,
+      "roc_auc": 0.6563,
+      "dp": 0.1108
+    },
+    "exclusão dos casos incompletos": {
+      "n": 119,
+      "roc_auc": 0.7023,
+      "dp": 0.1039
+    }
+  },
+  "coeficientes_lr_todos": {
+    "nota_pre": 0.7244,
+    "intrinsic_goal": 0.6502,
+    "ativ::Tutorial": -0.5629,
+    "self_efficacy": -0.5303,
+    "control_learning_beliefs": -0.5239,
+    "n_interacoes": 0.4699,
+    "ativ::Leitura de textos": -0.2777,
+    "task_value": 0.2667,
+    "tarefas_submetidas": -0.2306,
+    "n_sessoes": 0.2246,
+    "extrinsic_goal": 0.2135,
+    "dias_ativos": -0.2098,
+    "tempo_estudo_min": 0.1892,
+    "test_anxiety": -0.1562,
+    "ativ::Responder questões/tarefas": -0.1414,
+    "ativ::Outros (diálogos/botões)": 0.1351,
+    "ativ::Vocabulário (palavras e traduções)": 0.1218,
+    "ativ::Turmas (entrar/sair)": 0.1003,
+    "ativ::Navegação entre páginas": -0.0867,
+    "ativ::Visualização de feedback/nota": -0.0728,
+    "n_logins": -0.0336,
+    "ativ::Acesso (login)": -0.0336,
+    "ativ::Avaliação do texto (estrelas)": -0.0248
+  }
+}

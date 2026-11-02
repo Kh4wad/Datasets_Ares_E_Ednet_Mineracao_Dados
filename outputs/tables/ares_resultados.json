@@ -1,0 +1,715 @@
+{
+  "descritiva": {
+    "alunos_com_log": 192,
+    "alunos_analise_desempenho": 141,
+    "eventos_aprendizagem": 87391,
+    "estatisticas": {
+      "n_interacoes": {
+        "count": 192.0,
+        "mean": 455.16,
+        "std": 195.91,
+        "min": 99.0,
+        "25%": 336.0,
+        "50%": 423.5,
+        "75%": 569.0,
+        "max": 1596.0
+      },
+      "n_sessoes": {
+        "count": 192.0,
+        "mean": 11.15,
+        "std": 4.81,
+        "min": 2.0,
+        "25%": 8.0,
+        "50%": 11.0,
+        "75%": 14.0,
+        "max": 36.0
+      },
+      "dias_ativos": {
+        "count": 192.0,
+        "mean": 8.9,
+        "std": 3.37,
+        "min": 2.0,
+        "25%": 7.0,
+        "50%": 9.0,
+        "75%": 11.0,
+        "max": 28.0
+      },
+      "tempo_estudo_min": {
+        "count": 192.0,
+        "mean": 165.91,
+        "std": 84.02,
+        "min": 30.38,
+        "25%": 107.6,
+        "50%": 154.49,
+        "75%": 217.16,
+        "max": 545.5
+      },
+      "n_logins": {
+        "count": 192.0,
+        "mean": 11.94,
+        "std": 6.17,
+        "min": 2.0,
+        "25%": 7.0,
+        "50%": 11.5,
+        "75%": 15.25,
+        "max": 35.0
+      }
+    },
+    "notas": {
+      "nota_pre": {
+        "count": 141.0,
+        "mean": 4.752,
+        "std": 2.464,
+        "min": 0.0,
+        "25%": 3.0,
+        "50%": 4.0,
+        "75%": 6.0,
+        "max": 11.0
+      },
+      "nota_pos": {
+        "count": 141.0,
+        "mean": 5.461,
+        "std": 3.181,
+        "min": 0.0,
+        "25%": 3.0,
+        "50%": 5.0,
+        "75%": 8.0,
+        "max": 11.0
+      },
+      "evolucao": {
+        "count": 141.0,
+        "mean": 0.709,
+        "std": 3.03,
+        "min": -7.0,
+        "25%": -1.0,
+        "50%": 0.0,
+        "75%": 3.0,
+        "max": 9.0
+      },
+      "ganho_normalizado": {
+        "count": 139.0,
+        "mean": 0.058,
+        "std": 0.817,
+        "min": -7.0,
+        "25%": -0.211,
+        "50%": 0.0,
+        "75%": 0.5,
+        "max": 1.0
+      }
+    },
+    "pct_melhorou": 46.8,
+    "pct_igual": 14.2,
+    "pct_piorou": 39.0,
+    "wilcoxon_pos_vs_pre_p": 0.0113620303636004
+  },
+  "Q1": {
+    "populacao": 141,
+    "desempenho": "nota no pós-teste (0–11)",
+    "correlacoes": {
+      "n_interacoes": {
+        "n": 141,
+        "rho": 0.0789,
+        "p": 0.35237479246181974,
+        "ic95": [
+          -0.0856,
+          0.2397
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": false
+      },
+      "n_sessoes": {
+        "n": 141,
+        "rho": 0.0818,
+        "p": 0.33509592158394136,
+        "ic95": [
+          -0.0874,
+          0.2484
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": false
+      },
+      "dias_ativos": {
+        "n": 141,
+        "rho": 0.037,
+        "p": 0.6627968603087284,
+        "ic95": [
+          -0.1496,
+          0.2112
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": false
+      },
+      "n_logins": {
+        "n": 141,
+        "rho": -0.0581,
+        "p": 0.4934296303945815,
+        "ic95": [
+          -0.2209,
+          0.1133
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": false
+      }
+    },
+    "parciais_controle_pre": {
+      "n_interacoes": {
+        "n": 141,
+        "rho_parcial": 0.0576,
+        "p": 0.49876236081599323,
+        "forca": "desprezível"
+      },
+      "n_sessoes": {
+        "n": 141,
+        "rho_parcial": 0.0496,
+        "p": 0.5608310538154038,
+        "forca": "desprezível"
+      },
+      "dias_ativos": {
+        "n": 141,
+        "rho_parcial": 0.0147,
+        "p": 0.8628631719373829,
+        "forca": "desprezível"
+      },
+      "n_logins": {
+        "n": 141,
+        "rho_parcial": -0.0038,
+        "p": 0.9643932050346606,
+        "forca": "desprezível"
+      }
+    },
+    "grupos_quartil_interacoes": {
+      "grupos": {
+        "1º quartil (menos)": {
+          "n": 36,
+          "media": 5.8611,
+          "mediana": 6.0
+        },
+        "2º quartil": {
+          "n": 35,
+          "media": 4.0857,
+          "mediana": 3.0
+        },
+        "3º quartil": {
+          "n": 35,
+          "media": 5.7429,
+          "mediana": 4.0
+        },
+        "4º quartil (mais)": {
+          "n": 35,
+          "media": 6.1429,
+          "mediana": 7.0
+        }
+      },
+      "kruskal_H": 9.03,
+      "kruskal_p": 0.0288961986301254,
+      "mannwhitney_p_alto_vs_baixo": 0.6556954588633905,
+      "cliffs_delta_alto_vs_baixo": 0.0619
+    }
+  },
+  "Q4": {
+    "populacao": 192,
+    "indice_bruto": "média dos percentis de interações, sessões, dias ativos e tempo (contém efeito mecânico)",
+    "indice_corrigido": "média dos percentis de sessões e dias ativos; ρ parcial controlando log(nº de interações)",
+    "atividades": [
+      {
+        "atividade": "Turmas (entrar/sair)",
+        "coluna": "ativ::Turmas (entrar/sair)",
+        "rho_bruto": -0.4395,
+        "p_bruto": 1.8001389647416868e-10,
+        "rho_participacao_x_volume": -0.4659,
+        "rho_corrigido": -0.1228,
+        "p_corrigido": 0.09058898762152111,
+        "forca_corrigido": "fraca",
+        "pct_uso_alto_eng": 100.0,
+        "pct_uso_baixo_eng": 100.0,
+        "p_corrigido_holm": 0.5435339257291266,
+        "p_corrigido_bh": 0.18117797524304222
+      },
+      {
+        "atividade": "Vocabulário (palavras e traduções)",
+        "coluna": "ativ::Vocabulário (palavras e traduções)",
+        "rho_bruto": 0.1562,
+        "p_bruto": 0.030465895120809532,
+        "rho_participacao_x_volume": 0.2005,
+        "rho_corrigido": -0.0922,
+        "p_corrigido": 0.20482266360232876,
+        "forca_corrigido": "desprezível",
+        "pct_uso_alto_eng": 100.0,
+        "pct_uso_baixo_eng": 91.7,
+        "p_corrigido_holm": 1.0,
+        "p_corrigido_bh": 0.34137110600388126
+      },
+      {
+        "atividade": "Avaliação do texto (estrelas)",
+        "coluna": "ativ::Avaliação do texto (estrelas)",
+        "rho_bruto": -0.2178,
+        "p_bruto": 0.0024045167167633654,
+        "rho_participacao_x_volume": -0.1967,
+        "rho_corrigido": -0.0727,
+        "p_corrigido": 0.31732251985238996,
+        "forca_corrigido": "desprezível",
+        "pct_uso_alto_eng": 100.0,
+        "pct_uso_baixo_eng": 100.0,
+        "p_corrigido_holm": 1.0,
+        "p_corrigido_bh": 0.45331788550341423
+      },
+      {
+        "atividade": "Tutorial",
+        "coluna": "ativ::Tutorial",
+        "rho_bruto": -0.5586,
+        "p_bruto": 3.81239447397359e-17,
+        "rho_participacao_x_volume": -0.715,
+        "rho_corrigido": -0.0264,
+        "p_corrigido": 0.7165805667950382,
+        "forca_corrigido": "desprezível",
+        "pct_uso_alto_eng": 100.0,
+        "pct_uso_baixo_eng": 100.0,
+        "p_corrigido_holm": 1.0,
+        "p_corrigido_bh": 0.8240140206077735
+      },
+      {
+        "atividade": "Responder questões/tarefas",
+        "coluna": "ativ::Responder questões/tarefas",
+        "rho_bruto": 0.0015,
+        "p_bruto": 0.9830455550570266,
+        "rho_participacao_x_volume": 0.0633,
+        "rho_corrigido": -0.024,
+        "p_corrigido": 0.7416126185469961,
+        "forca_corrigido": "desprezível",
+        "pct_uso_alto_eng": 100.0,
+        "pct_uso_baixo_eng": 100.0,
+        "p_corrigido_holm": 1.0,
+        "p_corrigido_bh": 0.8240140206077735
+      },
+      {
+        "atividade": "Outros (diálogos/botões)",
+        "coluna": "ativ::Outros (diálogos/botões)",
+        "rho_bruto": -0.1125,
+        "p_bruto": 0.12035860496393938,
+        "rho_participacao_x_volume": -0.1186,
+        "rho_corrigido": -0.0045,
+        "p_corrigido": 0.9511978015109193,
+        "forca_corrigido": "desprezível",
+        "pct_uso_alto_eng": 97.9,
+        "pct_uso_baixo_eng": 93.8,
+        "p_corrigido_holm": 1.0,
+        "p_corrigido_bh": 0.9511978015109193
+      },
+      {
+        "atividade": "Visualização de feedback/nota",
+        "coluna": "ativ::Visualização de feedback/nota",
+        "rho_bruto": 0.3058,
+        "p_bruto": 1.606266759718688e-05,
+        "rho_participacao_x_volume": 0.2591,
+        "rho_corrigido": 0.1407,
+        "p_corrigido": 0.05223455540081166,
+        "forca_corrigido": "fraca",
+        "pct_uso_alto_eng": 33.3,
+        "pct_uso_baixo_eng": 8.3,
+        "p_corrigido_holm": 0.3656418878056816,
+        "p_corrigido_bh": 0.13058638850202914
+      },
+      {
+        "atividade": "Acesso (login)",
+        "coluna": "ativ::Acesso (login)",
+        "rho_bruto": -0.0921,
+        "p_bruto": 0.20405233597844968,
+        "rho_participacao_x_volume": -0.2557,
+        "rho_corrigido": 0.1461,
+        "p_corrigido": 0.04375305553163679,
+        "forca_corrigido": "fraca",
+        "pct_uso_alto_eng": 100.0,
+        "pct_uso_baixo_eng": 100.0,
+        "p_corrigido_holm": 0.3500244442530943,
+        "p_corrigido_bh": 0.13058638850202914
+      },
+      {
+        "atividade": "Navegação entre páginas",
+        "coluna": "ativ::Navegação entre páginas",
+        "rho_bruto": -0.0922,
+        "p_bruto": 0.2032529904964857,
+        "rho_participacao_x_volume": -0.3233,
+        "rho_corrigido": 0.2421,
+        "p_corrigido": 0.0007386635277592993,
+        "forca_corrigido": "fraca",
+        "pct_uso_alto_eng": 100.0,
+        "pct_uso_baixo_eng": 100.0,
+        "p_corrigido_holm": 0.006647971749833694,
+        "p_corrigido_bh": 0.003693317638796497
+      },
+      {
+        "atividade": "Leitura de textos",
+        "coluna": "ativ::Leitura de textos",
+        "rho_bruto": 0.0862,
+        "p_bruto": 0.23459071684589297,
+        "rho_participacao_x_volume": -0.1078,
+        "rho_corrigido": 0.3143,
+        "p_corrigido": 9.539064162368316e-06,
+        "forca_corrigido": "moderada",
+        "pct_uso_alto_eng": 100.0,
+        "pct_uso_baixo_eng": 100.0,
+        "p_corrigido_holm": 9.539064162368316e-05,
+        "p_corrigido_bh": 9.539064162368316e-05
+      }
+    ]
+  },
+  "Q5": {
+    "populacao": 141,
+    "evolucao": "nota_pos − nota_pre (−11 a +11); ganho normalizado de Hake",
+    "correlacoes_evolucao": {
+      "n_interacoes": {
+        "n": 141,
+        "rho": 0.001,
+        "p": 0.9906642060766341,
+        "ic95": [
+          -0.1659,
+          0.1769
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": false
+      },
+      "n_sessoes": {
+        "n": 141,
+        "rho": 0.0301,
+        "p": 0.7233053754754879,
+        "ic95": [
+          -0.1433,
+          0.2
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": false
+      },
+      "dias_ativos": {
+        "n": 141,
+        "rho": 0.0091,
+        "p": 0.9146911583292773,
+        "ic95": [
+          -0.1731,
+          0.1879
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": false
+      },
+      "n_logins": {
+        "n": 141,
+        "rho": 0.0301,
+        "p": 0.7232817649772327,
+        "ic95": [
+          -0.1403,
+          0.1904
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": false
+      }
+    },
+    "correlacoes_ganho_normalizado": {
+      "n_interacoes": {
+        "n": 139,
+        "rho": -0.0166,
+        "p": 0.8457923336158706,
+        "ic95": [
+          -0.182,
+          0.1588
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": false
+      },
+      "n_sessoes": {
+        "n": 139,
+        "rho": 0.0572,
+        "p": 0.5039657035028918,
+        "ic95": [
+          -0.1103,
+          0.2195
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": false
+      },
+      "dias_ativos": {
+        "n": 139,
+        "rho": 0.0105,
+        "p": 0.9027295325276,
+        "ic95": [
+          -0.1602,
+          0.167
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": false
+      },
+      "n_logins": {
+        "n": 139,
+        "rho": 0.0183,
+        "p": 0.831073216897761,
+        "ic95": [
+          -0.1532,
+          0.192
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": false
+      }
+    },
+    "parciais_evolucao_controle_pre": {
+      "n_interacoes": {
+        "n": 141,
+        "rho_parcial": 0.0227,
+        "p": 0.789990687289243,
+        "forca": "desprezível"
+      },
+      "n_sessoes": {
+        "n": 141,
+        "rho_parcial": 0.062,
+        "p": 0.46691037006604874,
+        "forca": "desprezível"
+      },
+      "dias_ativos": {
+        "n": 141,
+        "rho_parcial": 0.0289,
+        "p": 0.7343834759147464,
+        "forca": "desprezível"
+      },
+      "n_logins": {
+        "n": 141,
+        "rho_parcial": -0.013,
+        "p": 0.8790212870711591,
+        "forca": "desprezível"
+      }
+    },
+    "grupos_quartil_interacoes": {
+      "grupos": {
+        "1º quartil (menos)": {
+          "n": 36,
+          "media": 1.2778,
+          "mediana": 1.0
+        },
+        "2º quartil": {
+          "n": 35,
+          "media": -0.2857,
+          "mediana": -1.0
+        },
+        "3º quartil": {
+          "n": 35,
+          "media": 0.5429,
+          "mediana": 0.0
+        },
+        "4º quartil (mais)": {
+          "n": 35,
+          "media": 1.2857,
+          "mediana": 1.0
+        }
+      },
+      "kruskal_H": 6.302,
+      "kruskal_p": 0.09782350191869855,
+      "mannwhitney_p_alto_vs_baixo": 0.9907730079530176,
+      "cliffs_delta_alto_vs_baixo": -0.0024
+    },
+    "pct_melhorou_por_quartil": {
+      "1º quartil (menos)": 61.1,
+      "2º quartil": 31.4,
+      "3º quartil": 40.0,
+      "4º quartil (mais)": 54.3
+    },
+    "regressao_a_media_rho_pre_vs_evolucao": -0.319
+  },
+  "Q10": {
+    "populacao_uso": 192,
+    "populacao_desempenho": 141,
+    "denominadores": {
+      "pct_eventos": "87391 eventos de aprendizagem dos 192 alunos (sem alertas/erros do sistema)",
+      "pct_alunos_que_usam": "192 alunos com log",
+      "correlacoes": "141 alunos com pré, pós e log"
+    },
+    "correcao_multipla": "Holm sobre os 10 testes de cada coluna",
+    "atividades": [
+      {
+        "atividade": "Responder questões/tarefas",
+        "eventos_total": 41803,
+        "pct_eventos": 47.83,
+        "pct_alunos_que_usam": 100.0,
+        "pct_alunos_que_usam_141": 100.0,
+        "media_por_aluno": 217.7,
+        "rho_nota_pos": 0.0705,
+        "p_nota_pos": 0.40585419619820756,
+        "rho_parcial_nota_pos_ctrl_pre": 0.0391,
+        "p_parcial": 0.6465794325426594,
+        "rho_parcial_ctrl_pre_e_volume": -0.0149,
+        "p_parcial_ctrl_volume": 0.8619421153616232,
+        "rho_evolucao": -0.0099,
+        "p_evolucao": 0.9073200947794513,
+        "p_parcial_holm": 1.0,
+        "p_parcial_bh": 0.8840655222909231,
+        "p_parcial_ctrl_volume_holm": 1.0
+      },
+      {
+        "atividade": "Navegação entre páginas",
+        "eventos_total": 12395,
+        "pct_eventos": 14.18,
+        "pct_alunos_que_usam": 100.0,
+        "pct_alunos_que_usam_141": 100.0,
+        "media_por_aluno": 64.6,
+        "rho_nota_pos": -0.0059,
+        "p_nota_pos": 0.9448124464402836,
+        "rho_parcial_nota_pos_ctrl_pre": -0.0385,
+        "p_parcial": 0.6518792894468184,
+        "rho_parcial_ctrl_pre_e_volume": -0.1086,
+        "p_parcial_ctrl_volume": 0.2031462164484325,
+        "rho_evolucao": -0.0627,
+        "p_evolucao": 0.46049112805494,
+        "p_parcial_holm": 1.0,
+        "p_parcial_bh": 0.8840655222909231,
+        "p_parcial_ctrl_volume_holm": 1.0
+      },
+      {
+        "atividade": "Vocabulário (palavras e traduções)",
+        "eventos_total": 10317,
+        "pct_eventos": 11.81,
+        "pct_alunos_que_usam": 96.9,
+        "pct_alunos_que_usam_141": 97.2,
+        "media_por_aluno": 53.7,
+        "rho_nota_pos": 0.1547,
+        "p_nota_pos": 0.06702657164581914,
+        "rho_parcial_nota_pos_ctrl_pre": 0.1716,
+        "p_parcial": 0.04261024321674157,
+        "rho_parcial_ctrl_pre_e_volume": 0.1638,
+        "p_parcial_ctrl_volume": 0.05399188963231059,
+        "rho_evolucao": 0.117,
+        "p_evolucao": 0.16715937239669915,
+        "p_parcial_holm": 0.3834921889506741,
+        "p_parcial_bh": 0.21305121608370783,
+        "p_parcial_ctrl_volume_holm": 0.4859270066907953
+      },
+      {
+        "atividade": "Leitura de textos",
+        "eventos_total": 9476,
+        "pct_eventos": 10.84,
+        "pct_alunos_que_usam": 100.0,
+        "pct_alunos_que_usam_141": 100.0,
+        "media_por_aluno": 49.4,
+        "rho_nota_pos": 0.0015,
+        "p_nota_pos": 0.9863810583816591,
+        "rho_parcial_nota_pos_ctrl_pre": -0.0306,
+        "p_parcial": 0.7199943530651339,
+        "rho_parcial_ctrl_pre_e_volume": -0.1045,
+        "p_parcial_ctrl_volume": 0.2208919322216482,
+        "rho_evolucao": -0.0445,
+        "p_evolucao": 0.5999546811880719,
+        "p_parcial_holm": 1.0,
+        "p_parcial_bh": 0.8840655222909231,
+        "p_parcial_ctrl_volume_holm": 1.0
+      },
+      {
+        "atividade": "Avaliação do texto (estrelas)",
+        "eventos_total": 6202,
+        "pct_eventos": 7.1,
+        "pct_alunos_que_usam": 100.0,
+        "pct_alunos_que_usam_141": 100.0,
+        "media_por_aluno": 32.3,
+        "rho_nota_pos": -0.0628,
+        "p_nota_pos": 0.45922125538821346,
+        "rho_parcial_nota_pos_ctrl_pre": -0.0563,
+        "p_parcial": 0.5084770321392572,
+        "rho_parcial_ctrl_pre_e_volume": -0.083,
+        "p_parcial_ctrl_volume": 0.3315739038308988,
+        "rho_evolucao": -0.0536,
+        "p_evolucao": 0.5280183963276304,
+        "p_parcial_holm": 1.0,
+        "p_parcial_bh": 0.8840655222909231,
+        "p_parcial_ctrl_volume_holm": 1.0
+      },
+      {
+        "atividade": "Acesso (login)",
+        "eventos_total": 2293,
+        "pct_eventos": 2.62,
+        "pct_alunos_que_usam": 100.0,
+        "pct_alunos_que_usam_141": 100.0,
+        "media_por_aluno": 11.9,
+        "rho_nota_pos": -0.0581,
+        "p_nota_pos": 0.4934296303945815,
+        "rho_parcial_nota_pos_ctrl_pre": -0.0038,
+        "p_parcial": 0.9643932050346606,
+        "rho_parcial_ctrl_pre_e_volume": -0.0351,
+        "p_parcial_ctrl_volume": 0.6817990047508682,
+        "rho_evolucao": 0.0301,
+        "p_evolucao": 0.7232817649772327,
+        "p_parcial_holm": 1.0,
+        "p_parcial_bh": 0.9643932050346606,
+        "p_parcial_ctrl_volume_holm": 1.0
+      },
+      {
+        "atividade": "Outros (diálogos/botões)",
+        "eventos_total": 1842,
+        "pct_eventos": 2.11,
+        "pct_alunos_que_usam": 96.9,
+        "pct_alunos_que_usam_141": 98.6,
+        "media_por_aluno": 9.6,
+        "rho_nota_pos": 0.0724,
+        "p_nota_pos": 0.39329313816031697,
+        "rho_parcial_nota_pos_ctrl_pre": 0.0404,
+        "p_parcial": 0.635490469656214,
+        "rho_parcial_ctrl_pre_e_volume": 0.0175,
+        "p_parcial_ctrl_volume": 0.8377173105051168,
+        "rho_evolucao": -0.0188,
+        "p_evolucao": 0.8251523739611906,
+        "p_parcial_holm": 1.0,
+        "p_parcial_bh": 0.8840655222909231,
+        "p_parcial_ctrl_volume_holm": 1.0
+      },
+      {
+        "atividade": "Turmas (entrar/sair)",
+        "eventos_total": 1802,
+        "pct_eventos": 2.06,
+        "pct_alunos_que_usam": 100.0,
+        "pct_alunos_que_usam_141": 100.0,
+        "media_por_aluno": 9.4,
+        "rho_nota_pos": -0.0836,
+        "p_nota_pos": 0.32455833565517483,
+        "rho_parcial_nota_pos_ctrl_pre": -0.0221,
+        "p_parcial": 0.7956589700618307,
+        "rho_parcial_ctrl_pre_e_volume": -0.0307,
+        "p_parcial_ctrl_volume": 0.7199052596071588,
+        "rho_evolucao": 0.0099,
+        "p_evolucao": 0.9073469147015287,
+        "p_parcial_holm": 1.0,
+        "p_parcial_bh": 0.8840655222909231,
+        "p_parcial_ctrl_volume_holm": 1.0
+      },
+      {
+        "atividade": "Tutorial",
+        "eventos_total": 779,
+        "pct_eventos": 0.89,
+        "pct_alunos_que_usam": 100.0,
+        "pct_alunos_que_usam_141": 100.0,
+        "media_por_aluno": 4.1,
+        "rho_nota_pos": -0.1775,
+        "p_nota_pos": 0.0352640877555574,
+        "rho_parcial_nota_pos_ctrl_pre": -0.2342,
+        "p_parcial": 0.0053565800916281,
+        "rho_parcial_ctrl_pre_e_volume": -0.2387,
+        "p_parcial_ctrl_volume": 0.004661150106137954,
+        "rho_evolucao": -0.2539,
+        "p_evolucao": 0.002376709006248701,
+        "p_parcial_holm": 0.053565800916281,
+        "p_parcial_bh": 0.053565800916281,
+        "p_parcial_ctrl_volume_holm": 0.04661150106137954
+      },
+      {
+        "atividade": "Visualização de feedback/nota",
+        "eventos_total": 482,
+        "pct_eventos": 0.55,
+        "pct_alunos_que_usam": 22.4,
+        "pct_alunos_que_usam_141": 26.2,
+        "media_por_aluno": 2.5,
+        "rho_nota_pos": -0.0247,
+        "p_nota_pos": 0.7716327607226825,
+        "rho_parcial_nota_pos_ctrl_pre": -0.0427,
+        "p_parcial": 0.6162841871134497,
+        "rho_parcial_ctrl_pre_e_volume": -0.0555,
+        "p_parcial_ctrl_volume": 0.516435106111979,
+        "rho_evolucao": -0.008,
+        "p_evolucao": 0.9252503076690934,
+        "p_parcial_holm": 1.0,
+        "p_parcial_bh": 0.8840655222909231,
+        "p_parcial_ctrl_volume_holm": 1.0
+      }
+    ]
+  }
+}

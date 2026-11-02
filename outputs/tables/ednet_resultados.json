@@ -1,0 +1,703 @@
+{
+  "descritiva": {
+    "estudantes": 297915,
+    "eventos_limpos": 89194876,
+    "estudantes_com_10+_respostas_fora_diag": 76252,
+    "estudantes_com_40+_respostas_fora_diag": 42720,
+    "fluxo_q5": {
+      "base_original": 297915,
+      "com_ao_menos_1_resposta_final": 296700,
+      "com_ao_menos_1_resposta_fora_do_diagnostico": 102691,
+      "com_40+_respostas_qualquer_origem (formula antiga)": 46635,
+      "com_40+_respostas_fora_do_diagnostico (amostra final Q5)": 42720,
+      "evolucao_calculada": 42720
+    },
+    "estatisticas": {
+      "n_eventos": {
+        "count": 297915.0,
+        "mean": 299.397,
+        "std": 1427.395,
+        "min": 2.0,
+        "25%": 18.0,
+        "50%": 27.0,
+        "75%": 77.0,
+        "max": 169794.0
+      },
+      "n_sessoes": {
+        "count": 297915.0,
+        "mean": 4.63,
+        "std": 17.959,
+        "min": 1.0,
+        "25%": 1.0,
+        "50%": 1.0,
+        "75%": 2.0,
+        "max": 1341.0
+      },
+      "dias_ativos": {
+        "count": 297915.0,
+        "mean": 3.067,
+        "std": 8.627,
+        "min": 1.0,
+        "25%": 1.0,
+        "50%": 1.0,
+        "75%": 1.0,
+        "max": 413.0
+      },
+      "tempo_estudo_min": {
+        "count": 297915.0,
+        "mean": 105.513,
+        "std": 604.673,
+        "min": 0.0,
+        "25%": 2.782,
+        "50%": 4.455,
+        "75%": 18.018,
+        "max": 57024.33
+      },
+      "n_respondidas": {
+        "count": 297915.0,
+        "mean": 60.359,
+        "std": 284.535,
+        "min": 0.0,
+        "25%": 6.0,
+        "50%": 8.0,
+        "75%": 17.0,
+        "max": 31749.0
+      },
+      "acuracia": {
+        "count": 296700.0,
+        "mean": 0.499,
+        "std": 0.218,
+        "min": 0.0,
+        "25%": 0.333,
+        "50%": 0.5,
+        "75%": 0.667,
+        "max": 1.0
+      },
+      "pct_mobile": {
+        "count": 297915.0,
+        "mean": 0.677,
+        "std": 0.462,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 1.0,
+        "75%": 1.0,
+        "max": 1.0
+      }
+    },
+    "acuracia_media_geral": 0.6484,
+    "pct_so_uma_sessao": 73.3,
+    "pct_so_diagnostico": 62.5,
+    "qualidade": {
+      "linhas_brutas": 89270654,
+      "nulos_timestamp": 0,
+      "nulos_action_type": 0,
+      "nulos_item_id": 0,
+      "nulos_source": 0,
+      "nulos_user_answer": 65886174,
+      "nulos_platform": 0,
+      "duplicadas": 75778,
+      "invalido_timestamp": 0,
+      "invalido_action_type": 0,
+      "invalido_item_id": 0,
+      "invalido_platform": 0,
+      "invalido_resposta": 0,
+      "invalido_respond_sem_questao": 0,
+      "linhas_removidas_invalidas": 0,
+      "arquivos_fora_de_ordem": 0,
+      "linhas_limpas": 89194876,
+      "respostas_intermediarias_descartadas": 5325940,
+      "questoes_sem_gabarito": 0,
+      "arquivos": 297915,
+      "usuarios_com_dados": 297915
+    }
+  },
+  "Q1": {
+    "populacao": 76252,
+    "desempenho": "acurácia nas respostas finais fora do diagnóstico (≥10 questões)",
+    "correlacoes": {
+      "n_eventos": {
+        "n": 76252,
+        "rho": 0.1491,
+        "p": 0.0,
+        "ic95": [
+          0.1359,
+          0.1636
+        ],
+        "forca": "fraca",
+        "significativo_5pct": true
+      },
+      "n_sessoes": {
+        "n": 76252,
+        "rho": 0.0826,
+        "p": 1.5231768092724452e-115,
+        "ic95": [
+          0.0687,
+          0.0972
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": true
+      },
+      "dias_ativos": {
+        "n": 76252,
+        "rho": 0.0701,
+        "p": 1.3839353751487391e-83,
+        "ic95": [
+          0.057,
+          0.0844
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": true
+      }
+    },
+    "parciais_controle_diagnostico": {
+      "n_eventos": {
+        "n": 66062,
+        "rho_parcial": 0.141,
+        "p": 1.3666742795554778e-290,
+        "forca": "fraca"
+      },
+      "n_sessoes": {
+        "n": 66062,
+        "rho_parcial": 0.0768,
+        "p": 5.230880634588945e-87,
+        "forca": "desprezível"
+      },
+      "dias_ativos": {
+        "n": 66062,
+        "rho_parcial": 0.0665,
+        "p": 1.5130185127163838e-65,
+        "forca": "desprezível"
+      }
+    },
+    "populacao_parcial": 66062,
+    "grupos_quartil_interacoes": {
+      "grupos": {
+        "1º quartil (menos)": {
+          "n": 19063,
+          "media": 0.6027,
+          "mediana": 0.6
+        },
+        "2º quartil": {
+          "n": 19063,
+          "media": 0.6237,
+          "mediana": 0.6316
+        },
+        "3º quartil": {
+          "n": 19063,
+          "media": 0.6417,
+          "mediana": 0.6494
+        },
+        "4º quartil (mais)": {
+          "n": 19063,
+          "media": 0.6638,
+          "mediana": 0.6688
+        }
+      },
+      "kruskal_H": 1604.575,
+      "kruskal_p": 0.0,
+      "mannwhitney_p_alto_vs_baixo": 3.694811965801082e-270,
+      "cliffs_delta_alto_vs_baixo": 0.2076
+    },
+    "versao_original_acuracia_geral": {
+      "n": 123801,
+      "rho_n_eventos": 0.3635,
+      "mediana_pct_diagnostico_por_quartil": {
+        "1º quartil (menos)": 1.0,
+        "2º quartil": 0.5,
+        "3º quartil": 0.2,
+        "4º quartil (mais)": 0.03
+      },
+      "rho_n_eventos_x_pct_diagnostico": -0.9264
+    }
+  },
+  "Q4_abandono_pos_diagnostico": {
+    "estudantes_so_diagnostico": 186167,
+    "pct": 62.5,
+    "mediana_eventos_so_diag": 20.0,
+    "acuracia_diag_media_so_diag": 0.4634,
+    "acuracia_diag_media_continuaram": 0.4804,
+    "pct_mobile_so_diag": 58.3,
+    "pct_mobile_continuaram": 83.3
+  },
+  "Q4": {
+    "populacao": 111748,
+    "indice_bruto": "média dos percentis de interações, sessões, dias ativos e tempo (contém efeito mecânico)",
+    "indice_corrigido": "média dos percentis de sessões e dias ativos; ρ parcial controlando log(nº de interações)",
+    "atividades": [
+      {
+        "atividade": "Prática por parte (sprint)",
+        "coluna": "src_sprint",
+        "rho_bruto": 0.5863,
+        "p_bruto": 0.0,
+        "rho_participacao_x_volume": 0.6507,
+        "rho_corrigido": -0.109,
+        "p_corrigido": 2.728974739543292e-292,
+        "forca_corrigido": "fraca",
+        "pct_uso_alto_eng": 98.6,
+        "pct_uso_baixo_eng": 83.6,
+        "p_corrigido_holm": 1.0915898958173168e-291,
+        "p_corrigido_bh": 3.898535342204703e-292
+      },
+      {
+        "atividade": "Diagnóstico inicial",
+        "coluna": "src_diagnosis",
+        "rho_bruto": -0.7913,
+        "p_bruto": 0.0,
+        "rho_participacao_x_volume": -0.8174,
+        "rho_corrigido": -0.0967,
+        "p_corrigido": 1.8407622955207371e-230,
+        "forca_corrigido": "desprezível",
+        "pct_uso_alto_eng": 84.6,
+        "pct_uso_baixo_eng": 92.8,
+        "p_corrigido_holm": 5.522286886562212e-230,
+        "p_corrigido_bh": 2.3009528694009216e-230
+      },
+      {
+        "atividade": "Leitura de explicações (feedback)",
+        "coluna": "acessos_explicacao",
+        "rho_bruto": 0.7159,
+        "p_bruto": 0.0,
+        "rho_participacao_x_volume": 0.7375,
+        "rho_corrigido": 0.0622,
+        "p_corrigido": 4.46324160093895e-96,
+        "forca_corrigido": "desprezível",
+        "pct_uso_alto_eng": 100.0,
+        "pct_uso_baixo_eng": 94.2,
+        "p_corrigido_holm": 4.46324160093895e-96,
+        "p_corrigido_bh": 4.46324160093895e-96
+      },
+      {
+        "atividade": "Recomendação adaptativa",
+        "coluna": "src_adaptive_offer",
+        "rho_bruto": 0.6469,
+        "p_bruto": 0.0,
+        "rho_participacao_x_volume": 0.6662,
+        "rho_corrigido": 0.09,
+        "p_corrigido": 1.9164402641929523e-199,
+        "forca_corrigido": "desprezível",
+        "pct_uso_alto_eng": 88.3,
+        "pct_uso_baixo_eng": 8.9,
+        "p_corrigido_holm": 3.8328805283859045e-199,
+        "p_corrigido_bh": 2.1293780713255025e-199
+      },
+      {
+        "atividade": "Quiz de revisão",
+        "coluna": "src_review_quiz",
+        "rho_bruto": 0.4219,
+        "p_bruto": 0.0,
+        "rho_participacao_x_volume": 0.4243,
+        "rho_corrigido": 0.1195,
+        "p_corrigido": 0.0,
+        "forca_corrigido": "fraca",
+        "pct_uso_alto_eng": 44.1,
+        "pct_uso_baixo_eng": 2.3,
+        "p_corrigido_holm": 0.0,
+        "p_corrigido_bh": 0.0
+      },
+      {
+        "atividade": "Tutor",
+        "coluna": "src_tutor",
+        "rho_bruto": 0.2412,
+        "p_bruto": 0.0,
+        "rho_participacao_x_volume": 0.2026,
+        "rho_corrigido": 0.1531,
+        "p_corrigido": 0.0,
+        "forca_corrigido": "fraca",
+        "pct_uso_alto_eng": 22.3,
+        "pct_uso_baixo_eng": 0.6,
+        "p_corrigido_holm": 0.0,
+        "p_corrigido_bh": 0.0
+      },
+      {
+        "atividade": "Revisão",
+        "coluna": "src_review",
+        "rho_bruto": 0.275,
+        "p_bruto": 0.0,
+        "rho_participacao_x_volume": 0.2362,
+        "rho_corrigido": 0.1645,
+        "p_corrigido": 0.0,
+        "forca_corrigido": "fraca",
+        "pct_uso_alto_eng": 26.6,
+        "pct_uso_baixo_eng": 0.6,
+        "p_corrigido_holm": 0.0,
+        "p_corrigido_bh": 0.0
+      },
+      {
+        "atividade": "Caderno de erros/anotações",
+        "coluna": "src_my_note",
+        "rho_bruto": 0.3103,
+        "p_bruto": 0.0,
+        "rho_participacao_x_volume": 0.2783,
+        "rho_corrigido": 0.1744,
+        "p_corrigido": 0.0,
+        "forca_corrigido": "fraca",
+        "pct_uso_alto_eng": 71.5,
+        "pct_uso_baixo_eng": 18.2,
+        "p_corrigido_holm": 0.0,
+        "p_corrigido_bh": 0.0
+      },
+      {
+        "atividade": "Questões salvas (arquivo)",
+        "coluna": "src_archive",
+        "rho_bruto": 0.4189,
+        "p_bruto": 0.0,
+        "rho_participacao_x_volume": 0.3605,
+        "rho_corrigido": 0.2403,
+        "p_corrigido": 0.0,
+        "forca_corrigido": "fraca",
+        "pct_uso_alto_eng": 52.6,
+        "pct_uso_baixo_eng": 3.9,
+        "p_corrigido_holm": 0.0,
+        "p_corrigido_bh": 0.0
+      },
+      {
+        "atividade": "Aulas (vídeo/texto)",
+        "coluna": "acessos_aula",
+        "rho_bruto": 0.5658,
+        "p_bruto": 0.0,
+        "rho_participacao_x_volume": 0.5169,
+        "rho_corrigido": 0.2443,
+        "p_corrigido": 0.0,
+        "forca_corrigido": "fraca",
+        "pct_uso_alto_eng": 85.3,
+        "pct_uso_baixo_eng": 8.8,
+        "p_corrigido_holm": 0.0,
+        "p_corrigido_bh": 0.0
+      }
+    ],
+    "uso_mobile_vs_engajamento_corrigido": {
+      "n": 111748,
+      "rho_parcial": 0.0047,
+      "p": 0.11900013962524807,
+      "forca": "desprezível"
+    }
+  },
+  "Q5": {
+    "populacao": 42720,
+    "evolucao": "acurácia nas últimas 20 − primeiras 20 questões fora do diagnóstico (estudantes com ≥ 40)",
+    "correlacoes_evolucao": {
+      "n_eventos": {
+        "n": 42720,
+        "rho": 0.0393,
+        "p": 4.422978188629517e-16,
+        "ic95": [
+          0.0248,
+          0.0524
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": true
+      },
+      "n_sessoes": {
+        "n": 42720,
+        "rho": 0.0233,
+        "p": 1.4609436062537186e-06,
+        "ic95": [
+          0.01,
+          0.0374
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": true
+      },
+      "dias_ativos": {
+        "n": 42720,
+        "rho": 0.0223,
+        "p": 3.97269177783324e-06,
+        "ic95": [
+          0.0089,
+          0.036
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": true
+      }
+    },
+    "parciais_evolucao_controle_inicio": {
+      "n_eventos": {
+        "n": 42720,
+        "rho_parcial": 0.0586,
+        "p": 7.665747547158369e-34,
+        "forca": "desprezível"
+      },
+      "n_sessoes": {
+        "n": 42720,
+        "rho_parcial": 0.0098,
+        "p": 0.04269356419650491,
+        "forca": "desprezível"
+      },
+      "dias_ativos": {
+        "n": 42720,
+        "rho_parcial": -0.0033,
+        "p": 0.4901323065118471,
+        "forca": "desprezível"
+      }
+    },
+    "correlacoes_evolucao_diag": {
+      "n_eventos": {
+        "n": 66062,
+        "rho": 0.0665,
+        "p": 1.4711348163682886e-65,
+        "ic95": [
+          0.053,
+          0.0815
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": true
+      },
+      "n_sessoes": {
+        "n": 66062,
+        "rho": 0.0409,
+        "p": 6.432016994351968e-26,
+        "ic95": [
+          0.0273,
+          0.055
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": true
+      },
+      "dias_ativos": {
+        "n": 66062,
+        "rho": 0.0422,
+        "p": 2.0112801121947678e-27,
+        "ic95": [
+          0.0286,
+          0.0566
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": true
+      }
+    },
+    "populacao_evolucao_diag": 66062,
+    "grupos_quartil_interacoes": {
+      "grupos": {
+        "1º quartil (menos)": {
+          "n": 10680,
+          "media": 0.0034,
+          "mediana": 0.0
+        },
+        "2º quartil": {
+          "n": 10680,
+          "media": 0.0081,
+          "mediana": 0.0
+        },
+        "3º quartil": {
+          "n": 10680,
+          "media": 0.0069,
+          "mediana": 0.0
+        },
+        "4º quartil (mais)": {
+          "n": 10680,
+          "media": 0.0217,
+          "mediana": 0.0
+        }
+      },
+      "kruskal_H": 60.21,
+      "kruskal_p": 5.300595934016517e-13,
+      "mannwhitney_p_alto_vs_baixo": 4.928726286602713e-13,
+      "cliffs_delta_alto_vs_baixo": 0.057
+    },
+    "pct_melhorou_por_quartil": {
+      "1º quartil (menos)": 45.5,
+      "2º quartil": 46.6,
+      "3º quartil": 46.8,
+      "4º quartil (mais)": 49.8
+    },
+    "media_inicio_fim": {
+      "inicio": 0.6362,
+      "fim": 0.6462,
+      "pct_melhorou": 47.2
+    },
+    "versao_original_com_diagnostico": {
+      "n": 46635,
+      "evolucao_media": 0.0586,
+      "pct_melhorou": 58.5,
+      "rho_n_eventos": 0.0387
+    },
+    "evolucao_mediana": 0.0,
+    "pct_piorou": 42.1,
+    "regressao_a_media_rho_inicio_vs_evolucao": -0.6015
+  },
+  "Q10": {
+    "populacao_uso": 297915,
+    "populacao_ativos": 111748,
+    "populacao_desempenho": 76252,
+    "populacao_parcial": 66062,
+    "soma_das_origens_igual_total": true,
+    "denominadores": {
+      "pct_eventos": "89194876 eventos de todos os 297915 estudantes (só origens)",
+      "pct_estudantes_que_usam": "todos os 297915 estudantes (inclui os só-diagnóstico)",
+      "pct_estudantes_ativos_que_usam": "111748 estudantes que foram além do diagnóstico",
+      "correlacoes": "66062 estudantes com diagnóstico (>=5) e >=10 questões depois"
+    },
+    "atividades": [
+      {
+        "atividade": "Prática por parte (sprint)",
+        "coluna": "src_sprint",
+        "tipo": "origem (partição dos eventos)",
+        "eventos_total": 64616840,
+        "pct_eventos": 72.44,
+        "pct_estudantes_que_usam": 33.3,
+        "pct_estudantes_ativos_que_usam": 88.9,
+        "media_por_estudante_usuario": 650.5,
+        "acuracia_dentro_da_atividade": 0.664,
+        "rho_acuracia_pos_diag": 0.1783,
+        "p_acuracia_pos_diag": 0.0,
+        "rho_parcial_acuracia_ctrl_diag": 0.1632,
+        "p_parcial": 0.0,
+        "rho_parcial_ctrl_diag_e_volume": 0.0999,
+        "p_parcial_ctrl_volume": 4.885018567370008e-146
+      },
+      {
+        "atividade": "Leitura de explicações (feedback)",
+        "coluna": "acessos_explicacao",
+        "tipo": "acessos (enter; já contados numa origem)",
+        "eventos_total": 15853221,
+        "pct_eventos": NaN,
+        "pct_estudantes_que_usam": 36.3,
+        "pct_estudantes_ativos_que_usam": 96.7,
+        "media_por_estudante_usuario": 146.7,
+        "acuracia_dentro_da_atividade": NaN,
+        "rho_acuracia_pos_diag": 0.1494,
+        "p_acuracia_pos_diag": 0.0,
+        "rho_parcial_acuracia_ctrl_diag": 0.1422,
+        "p_parcial": 2.200298145137284e-295,
+        "rho_parcial_ctrl_diag_e_volume": 0.0184,
+        "p_parcial_ctrl_volume": 2.2324223133781506e-06
+      },
+      {
+        "atividade": "Caderno de erros/anotações",
+        "coluna": "src_my_note",
+        "tipo": "origem (partição dos eventos)",
+        "eventos_total": 7033452,
+        "pct_eventos": 7.89,
+        "pct_estudantes_que_usam": 13.5,
+        "pct_estudantes_ativos_que_usam": 36.1,
+        "media_por_estudante_usuario": 174.5,
+        "acuracia_dentro_da_atividade": 0.6307,
+        "rho_acuracia_pos_diag": 0.038,
+        "p_acuracia_pos_diag": 8.240576967984109e-26,
+        "rho_parcial_acuracia_ctrl_diag": 0.0395,
+        "p_parcial": 3.2889498200062833e-24,
+        "rho_parcial_ctrl_diag_e_volume": -0.0463,
+        "p_parcial_ctrl_volume": 9.521233808530097e-33
+      },
+      {
+        "atividade": "Diagnóstico inicial",
+        "coluna": "src_diagnosis",
+        "tipo": "origem (partição dos eventos)",
+        "eventos_total": 6621642,
+        "pct_eventos": 7.42,
+        "pct_estudantes_que_usam": 96.1,
+        "pct_estudantes_ativos_que_usam": 89.7,
+        "media_por_estudante_usuario": 23.1,
+        "acuracia_dentro_da_atividade": 0.4742,
+        "rho_acuracia_pos_diag": -0.0436,
+        "p_acuracia_pos_diag": 2.373510619925673e-33,
+        "rho_parcial_acuracia_ctrl_diag": -0.0456,
+        "p_parcial": 9.158888520363528e-32,
+        "rho_parcial_ctrl_diag_e_volume": -0.0525,
+        "p_parcial_ctrl_volume": 1.3090729830213797e-41
+      },
+      {
+        "atividade": "Recomendação adaptativa",
+        "coluna": "src_adaptive_offer",
+        "tipo": "origem (partição dos eventos)",
+        "eventos_total": 5122323,
+        "pct_eventos": 5.74,
+        "pct_estudantes_que_usam": 15.0,
+        "pct_estudantes_ativos_que_usam": 39.9,
+        "media_por_estudante_usuario": 114.9,
+        "acuracia_dentro_da_atividade": 0.7813,
+        "rho_acuracia_pos_diag": 0.0224,
+        "p_acuracia_pos_diag": 6.477675713408766e-10,
+        "rho_parcial_acuracia_ctrl_diag": 0.0093,
+        "p_parcial": 0.017202350341840696,
+        "rho_parcial_ctrl_diag_e_volume": -0.1612,
+        "p_parcial_ctrl_volume": 0.0
+      },
+      {
+        "atividade": "Quiz de revisão",
+        "coluna": "src_review_quiz",
+        "tipo": "origem (partição dos eventos)",
+        "eventos_total": 3620216,
+        "pct_eventos": 4.06,
+        "pct_estudantes_que_usam": 6.2,
+        "pct_estudantes_ativos_que_usam": 16.5,
+        "media_por_estudante_usuario": 196.3,
+        "acuracia_dentro_da_atividade": 0.7367,
+        "rho_acuracia_pos_diag": 0.0756,
+        "p_acuracia_pos_diag": 5.282871166271055e-97,
+        "rho_parcial_acuracia_ctrl_diag": 0.0787,
+        "p_parcial": 3.8604565534596385e-91,
+        "rho_parcial_ctrl_diag_e_volume": 0.0114,
+        "p_parcial_ctrl_volume": 0.0033383907841040205
+      },
+      {
+        "atividade": "Revisão",
+        "coluna": "src_review",
+        "tipo": "origem (partição dos eventos)",
+        "eventos_total": 803141,
+        "pct_eventos": 0.9,
+        "pct_estudantes_que_usam": 4.4,
+        "pct_estudantes_ativos_que_usam": 11.9,
+        "media_por_estudante_usuario": 60.6,
+        "acuracia_dentro_da_atividade": 0.7787,
+        "rho_acuracia_pos_diag": 0.0432,
+        "p_acuracia_pos_diag": 7.927915673515291e-33,
+        "rho_parcial_acuracia_ctrl_diag": 0.0419,
+        "p_parcial": 4.772559167708103e-27,
+        "rho_parcial_ctrl_diag_e_volume": 0.0064,
+        "p_parcial_ctrl_volume": 0.10041720790098703
+      },
+      {
+        "atividade": "Tutor",
+        "coluna": "src_tutor",
+        "tipo": "origem (partição dos eventos)",
+        "eventos_total": 722038,
+        "pct_eventos": 0.81,
+        "pct_estudantes_que_usam": 3.7,
+        "pct_estudantes_ativos_que_usam": 9.8,
+        "media_por_estudante_usuario": 66.2,
+        "acuracia_dentro_da_atividade": 0.6337,
+        "rho_acuracia_pos_diag": 0.0282,
+        "p_acuracia_pos_diag": 6.9696727105534914e-15,
+        "rho_parcial_acuracia_ctrl_diag": 0.0293,
+        "p_parcial": 4.700661977111716e-14,
+        "rho_parcial_ctrl_diag_e_volume": -0.0072,
+        "p_parcial_ctrl_volume": 0.06326056110160894
+      },
+      {
+        "atividade": "Questões salvas (arquivo)",
+        "coluna": "src_archive",
+        "tipo": "origem (partição dos eventos)",
+        "eventos_total": 655224,
+        "pct_eventos": 0.73,
+        "pct_estudantes_que_usam": 7.9,
+        "pct_estudantes_ativos_que_usam": 21.0,
+        "media_por_estudante_usuario": 28.0,
+        "acuracia_dentro_da_atividade": NaN,
+        "rho_acuracia_pos_diag": 0.0659,
+        "p_acuracia_pos_diag": 3.339404631190478e-74,
+        "rho_parcial_acuracia_ctrl_diag": 0.0804,
+        "p_parcial": 4.329444466816591e-95,
+        "rho_parcial_ctrl_diag_e_volume": 0.0119,
+        "p_parcial_ctrl_volume": 0.00215979490862619
+      },
+      {
+        "atividade": "Aulas (vídeo/texto)",
+        "coluna": "acessos_aula",
+        "tipo": "acessos (enter; já contados numa origem)",
+        "eventos_total": 601805,
+        "pct_eventos": NaN,
+        "pct_estudantes_que_usam": 14.4,
+        "pct_estudantes_ativos_que_usam": 38.3,
+        "media_por_estudante_usuario": 14.1,
+        "acuracia_dentro_da_atividade": NaN,
+        "rho_acuracia_pos_diag": 0.037,
+        "p_acuracia_pos_diag": 1.43918361115024e-24,
+        "rho_parcial_acuracia_ctrl_diag": 0.0356,
+        "p_parcial": 5.57680037924671e-20,
+        "rho_parcial_ctrl_diag_e_volume": -0.0953,
+        "p_parcial_ctrl_volume": 5.383172533846663e-133
+      }
+    ]
+  }
+}

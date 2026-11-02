@@ -1,0 +1,880 @@
+{
+  "Q1_mesmos_alunos": {
+    "n_notebook_antigo": 141,
+    "n_documentacao": 141,
+    "conjuntos_identicos": true,
+    "removidos_pela_lista_dos_autores_na_intersecao": 0
+  },
+  "Q1_decomposicao": {
+    "A_notebook_antigo (todos os eventos, com duplicatas, nota 0–12)": {
+      "n": 141,
+      "pearson_r": 0.1178,
+      "pearson_p": 0.1642,
+      "pearson_ic95": [
+        -0.053,
+        0.275
+      ],
+      "spearman_rho": 0.1005,
+      "spearman_p": 0.2357,
+      "spearman_ic95": [
+        -0.0695,
+        0.2585
+      ]
+    },
+    "B = A + nota oficial 0–11 (sem Q9)": {
+      "n": 141,
+      "pearson_r": 0.0939,
+      "pearson_p": 0.268,
+      "pearson_ic95": [
+        -0.073,
+        0.251
+      ],
+      "spearman_rho": 0.0837,
+      "spearman_p": 0.3237,
+      "spearman_ic95": [
+        -0.0865,
+        0.2417
+      ]
+    },
+    "C = B + sem duplicatas": {
+      "n": 141,
+      "pearson_r": 0.121,
+      "pearson_p": 0.1528,
+      "pearson_ic95": [
+        -0.056,
+        0.268
+      ],
+      "spearman_rho": 0.0889,
+      "spearman_p": 0.2945,
+      "spearman_ic95": [
+        -0.0827,
+        0.2477
+      ]
+    },
+    "D = C + só eventos de aprendizagem (DOCUMENTAÇÃO)": {
+      "n": 141,
+      "pearson_r": 0.1153,
+      "pearson_p": 0.1733,
+      "pearson_ic95": [
+        -0.052,
+        0.266
+      ],
+      "spearman_rho": 0.0789,
+      "spearman_p": 0.3524,
+      "spearman_ic95": [
+        -0.0903,
+        0.2395
+      ]
+    },
+    "D com log(interações) — Pearson": {
+      "pearson_r": 0.0747,
+      "pearson_p": 0.3788
+    },
+    "D sem os 4 outliers (IQR)": {
+      "n": 137,
+      "pearson_r": 0.1001,
+      "pearson_p": 0.2445,
+      "pearson_ic95": [
+        -0.068,
+        0.27
+      ],
+      "spearman_rho": 0.0718,
+      "spearman_p": 0.4044,
+      "spearman_ic95": [
+        -0.0995,
+        0.2474
+      ]
+    },
+    "assimetria_interacoes": 1.91,
+    "shapiro_p_interacoes": 9.991332215456109e-10,
+    "n_minimo_para_detectar_r_0.118_com_80pct_poder": 562
+  },
+  "Q5_ares": {
+    "formula": "evolucao = nota_pos − nota_pre (0–11, Q9 excluída nas duas provas)",
+    "nota_pre_confere_com_recalculo": true,
+    "ganho_normalizado_indefinido_pre_11": 2,
+    "ganho_normalizado_min": -7.0,
+    "ganho_normalizado_pct_negativos": 38.3,
+    "rho_evolucao_interacoes": {
+      "n": 141,
+      "rho": 0.001,
+      "p": 0.9906642060766341,
+      "ic95": [
+        -0.1634,
+        0.1721
+      ],
+      "forca": "desprezível",
+      "significativo_5pct": false
+    },
+    "poder": "n = 141 detecta |ρ| ≥ 0,24 com 80% de poder; o IC95% [−0,17; +0,18] não descarta efeito fraco"
+  },
+  "Q5_ednet": {
+    "formula_original": "últimas 20 − primeiras 20 respostas (qualquer origem)",
+    "formula_corrigida": "últimas 20 − primeiras 20 respostas FORA do diagnóstico",
+    "original": {
+      "n": 46635,
+      "inicio": 0.5855,
+      "fim": 0.6441,
+      "evolucao_media": 0.0586,
+      "pct_melhorou": 58.5,
+      "rho_n_eventos": {
+        "n": 46635,
+        "rho": 0.0387,
+        "p": 6.757621354732993e-17,
+        "ic95": [
+          0.0271,
+          0.0537
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": true
+      }
+    },
+    "corrigida": {
+      "n": 42720,
+      "inicio": 0.6362,
+      "fim": 0.6462,
+      "evolucao_media": 0.01,
+      "evolucao_mediana": 0.0,
+      "pct_melhorou": 47.2,
+      "pct_piorou": 42.1,
+      "rho_n_eventos": {
+        "n": 42720,
+        "rho": 0.0393,
+        "p": 4.422978188629517e-16,
+        "ic95": [
+          0.0248,
+          0.0524
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": true
+      },
+      "rho_n_sessoes": {
+        "n": 42720,
+        "rho": 0.0233,
+        "p": 1.4609436062537186e-06,
+        "ic95": [
+          0.01,
+          0.0374
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": true
+      },
+      "rho_dias_ativos": {
+        "n": 42720,
+        "rho": 0.0223,
+        "p": 3.97269177783324e-06,
+        "ic95": [
+          0.0089,
+          0.036
+        ],
+        "forca": "desprezível",
+        "significativo_5pct": true
+      },
+      "parcial_n_eventos_ctrl_inicio": {
+        "n": 42720,
+        "rho_parcial": 0.0586,
+        "p": 7.665747547158369e-34,
+        "forca": "desprezível"
+      }
+    }
+  },
+  "consistencia": {
+    "saidas_mais_antigas_que_os_dados_processados": [],
+    "recalculo_independente": {
+      "total": 93,
+      "conferem": 93,
+      "falhas": [],
+      "detalhe": [
+        {
+          "verificacao": "ARES Q1 n",
+          "oficial": 141,
+          "recalculado": 141.0,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q1 ρ interações×nota pós",
+          "oficial": 0.0789,
+          "recalculado": 0.0789,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q1 ρ parcial (pré)",
+          "oficial": 0.0576,
+          "recalculado": 0.0576,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q5 ρ interações×evolução",
+          "oficial": 0.001,
+          "recalculado": 0.001,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q4 ρ corrigido — Acesso (login)",
+          "oficial": 0.1461,
+          "recalculado": 0.1461,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q4 ρ corrigido — Avaliação do texto (estrelas)",
+          "oficial": -0.0727,
+          "recalculado": -0.0727,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q4 ρ corrigido — Leitura de textos",
+          "oficial": 0.3143,
+          "recalculado": 0.3143,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q4 ρ corrigido — Navegação entre páginas",
+          "oficial": 0.2421,
+          "recalculado": 0.2421,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q4 ρ corrigido — Outros (diálogos/botões)",
+          "oficial": -0.0045,
+          "recalculado": -0.0045,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q4 ρ corrigido — Responder questões/tarefas",
+          "oficial": -0.024,
+          "recalculado": -0.024,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q4 ρ corrigido — Turmas (entrar/sair)",
+          "oficial": -0.1228,
+          "recalculado": -0.1228,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q4 ρ corrigido — Tutorial",
+          "oficial": -0.0264,
+          "recalculado": -0.0264,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q4 ρ corrigido — Visualização de feedback/nota",
+          "oficial": 0.1407,
+          "recalculado": 0.1407,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q4 ρ corrigido — Vocabulário (palavras e traduções)",
+          "oficial": -0.0922,
+          "recalculado": -0.0922,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q4 p Holm — Acesso (login)",
+          "oficial": 0.3500244442530943,
+          "recalculado": 0.35,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q4 p Holm — Avaliação do texto (estrelas)",
+          "oficial": 1.0,
+          "recalculado": 1.0,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q4 p Holm — Leitura de textos",
+          "oficial": 9.539064162368316e-05,
+          "recalculado": 0.0001,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q4 p Holm — Navegação entre páginas",
+          "oficial": 0.006647971749833694,
+          "recalculado": 0.0066,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q4 p Holm — Outros (diálogos/botões)",
+          "oficial": 1.0,
+          "recalculado": 1.0,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q4 p Holm — Responder questões/tarefas",
+          "oficial": 1.0,
+          "recalculado": 1.0,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q4 p Holm — Turmas (entrar/sair)",
+          "oficial": 0.5435339257291266,
+          "recalculado": 0.5435,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q4 p Holm — Tutorial",
+          "oficial": 1.0,
+          "recalculado": 1.0,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q4 p Holm — Visualização de feedback/nota",
+          "oficial": 0.3656418878056816,
+          "recalculado": 0.3656,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q4 p Holm — Vocabulário (palavras e traduções)",
+          "oficial": 1.0,
+          "recalculado": 1.0,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 ρ parcial (pré) — Acesso (login)",
+          "oficial": -0.0038,
+          "recalculado": -0.0038,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 % eventos — Acesso (login)",
+          "oficial": 2.62,
+          "recalculado": 2.6238,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 ρ parcial (pré) — Avaliação do texto (estrelas)",
+          "oficial": -0.0563,
+          "recalculado": -0.0563,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 % eventos — Avaliação do texto (estrelas)",
+          "oficial": 7.1,
+          "recalculado": 7.0968,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 ρ parcial (pré) — Leitura de textos",
+          "oficial": -0.0306,
+          "recalculado": -0.0306,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 % eventos — Leitura de textos",
+          "oficial": 10.84,
+          "recalculado": 10.8432,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 ρ parcial (pré) — Navegação entre páginas",
+          "oficial": -0.0385,
+          "recalculado": -0.0385,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 % eventos — Navegação entre páginas",
+          "oficial": 14.18,
+          "recalculado": 14.1834,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 ρ parcial (pré) — Outros (diálogos/botões)",
+          "oficial": 0.0404,
+          "recalculado": 0.0404,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 % eventos — Outros (diálogos/botões)",
+          "oficial": 2.11,
+          "recalculado": 2.1078,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 ρ parcial (pré) — Responder questões/tarefas",
+          "oficial": 0.0391,
+          "recalculado": 0.0391,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 % eventos — Responder questões/tarefas",
+          "oficial": 47.83,
+          "recalculado": 47.8344,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 ρ parcial (pré) — Turmas (entrar/sair)",
+          "oficial": -0.0221,
+          "recalculado": -0.0221,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 % eventos — Turmas (entrar/sair)",
+          "oficial": 2.06,
+          "recalculado": 2.062,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 ρ parcial (pré) — Tutorial",
+          "oficial": -0.2342,
+          "recalculado": -0.2342,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 % eventos — Tutorial",
+          "oficial": 0.89,
+          "recalculado": 0.8914,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 ρ parcial (pré) — Visualização de feedback/nota",
+          "oficial": -0.0427,
+          "recalculado": -0.0427,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 % eventos — Visualização de feedback/nota",
+          "oficial": 0.55,
+          "recalculado": 0.5515,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 ρ parcial (pré) — Vocabulário (palavras e traduções)",
+          "oficial": 0.1716,
+          "recalculado": 0.1716,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 % eventos — Vocabulário (palavras e traduções)",
+          "oficial": 11.81,
+          "recalculado": 11.8056,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 p Holm — Acesso (login)",
+          "oficial": 1.0,
+          "recalculado": 1.0,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 p Holm — Avaliação do texto (estrelas)",
+          "oficial": 1.0,
+          "recalculado": 1.0,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 p Holm — Leitura de textos",
+          "oficial": 1.0,
+          "recalculado": 1.0,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 p Holm — Navegação entre páginas",
+          "oficial": 1.0,
+          "recalculado": 1.0,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 p Holm — Outros (diálogos/botões)",
+          "oficial": 1.0,
+          "recalculado": 1.0,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 p Holm — Responder questões/tarefas",
+          "oficial": 1.0,
+          "recalculado": 1.0,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 p Holm — Turmas (entrar/sair)",
+          "oficial": 1.0,
+          "recalculado": 1.0,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 p Holm — Tutorial",
+          "oficial": 0.053565800916281,
+          "recalculado": 0.0536,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 p Holm — Visualização de feedback/nota",
+          "oficial": 1.0,
+          "recalculado": 1.0,
+          "confere": true
+        },
+        {
+          "verificacao": "ARES Q10 p Holm — Vocabulário (palavras e traduções)",
+          "oficial": 0.3834921889506741,
+          "recalculado": 0.3835,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q1 n",
+          "oficial": 76252,
+          "recalculado": 76252.0,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q1 ρ interações×acurácia fora do diag",
+          "oficial": 0.1491,
+          "recalculado": 0.1491,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q1 ρ parcial (diagnóstico)",
+          "oficial": 0.141,
+          "recalculado": 0.141,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q5 n",
+          "oficial": 42720,
+          "recalculado": 42720.0,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q5 n = alunos com ≥40 respostas fora do diag",
+          "oficial": 42720,
+          "recalculado": 42720.0,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q5 acurácia início",
+          "oficial": 0.6362,
+          "recalculado": 0.6362,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q5 acurácia fim",
+          "oficial": 0.6462,
+          "recalculado": 0.6462,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q5 ρ interações×evolução",
+          "oficial": 0.0393,
+          "recalculado": 0.0393,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q4 ρ corrigido — Prática por parte (sprint)",
+          "oficial": -0.109,
+          "recalculado": -0.109,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q4 ρ corrigido — Diagnóstico inicial",
+          "oficial": -0.0967,
+          "recalculado": -0.0967,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q4 ρ corrigido — Leitura de explicações (feedback)",
+          "oficial": 0.0622,
+          "recalculado": 0.0622,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q4 ρ corrigido — Recomendação adaptativa",
+          "oficial": 0.09,
+          "recalculado": 0.09,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q4 ρ corrigido — Quiz de revisão",
+          "oficial": 0.1195,
+          "recalculado": 0.1195,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q4 ρ corrigido — Tutor",
+          "oficial": 0.1531,
+          "recalculado": 0.1531,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q4 ρ corrigido — Revisão",
+          "oficial": 0.1645,
+          "recalculado": 0.1645,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q4 ρ corrigido — Caderno de erros/anotações",
+          "oficial": 0.1744,
+          "recalculado": 0.1744,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q4 ρ corrigido — Questões salvas (arquivo)",
+          "oficial": 0.2403,
+          "recalculado": 0.2403,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q4 ρ corrigido — Aulas (vídeo/texto)",
+          "oficial": 0.2443,
+          "recalculado": 0.2443,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q10 origens somam o total de eventos",
+          "oficial": 0,
+          "recalculado": 0.0,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q10 % ativos que usam — Prática por parte (sprint)",
+          "oficial": 88.9,
+          "recalculado": 88.8911,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q10 ρ parcial (diag + volume) — Prática por parte (sprint)",
+          "oficial": 0.0999,
+          "recalculado": 0.0999,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q10 % ativos que usam — Leitura de explicações (feedback)",
+          "oficial": 96.7,
+          "recalculado": 96.7373,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q10 ρ parcial (diag + volume) — Leitura de explicações (feedback)",
+          "oficial": 0.0184,
+          "recalculado": 0.0184,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q10 % ativos que usam — Caderno de erros/anotações",
+          "oficial": 36.1,
+          "recalculado": 36.066,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q10 ρ parcial (diag + volume) — Caderno de erros/anotações",
+          "oficial": -0.0463,
+          "recalculado": -0.0463,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q10 % ativos que usam — Diagnóstico inicial",
+          "oficial": 89.7,
+          "recalculado": 89.7215,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q10 ρ parcial (diag + volume) — Diagnóstico inicial",
+          "oficial": -0.0525,
+          "recalculado": -0.0525,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q10 % ativos que usam — Recomendação adaptativa",
+          "oficial": 39.9,
+          "recalculado": 39.8799,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q10 ρ parcial (diag + volume) — Recomendação adaptativa",
+          "oficial": -0.1612,
+          "recalculado": -0.1612,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q10 % ativos que usam — Quiz de revisão",
+          "oficial": 16.5,
+          "recalculado": 16.5041,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q10 ρ parcial (diag + volume) — Quiz de revisão",
+          "oficial": 0.0114,
+          "recalculado": 0.0114,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q10 % ativos que usam — Revisão",
+          "oficial": 11.9,
+          "recalculado": 11.8552,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q10 ρ parcial (diag + volume) — Revisão",
+          "oficial": 0.0064,
+          "recalculado": 0.0064,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q10 % ativos que usam — Tutor",
+          "oficial": 9.8,
+          "recalculado": 9.7657,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q10 ρ parcial (diag + volume) — Tutor",
+          "oficial": -0.0072,
+          "recalculado": -0.0072,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q10 % ativos que usam — Questões salvas (arquivo)",
+          "oficial": 21.0,
+          "recalculado": 20.9614,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q10 ρ parcial (diag + volume) — Questões salvas (arquivo)",
+          "oficial": 0.0119,
+          "recalculado": 0.0119,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q10 % ativos que usam — Aulas (vídeo/texto)",
+          "oficial": 38.3,
+          "recalculado": 38.2566,
+          "confere": true
+        },
+        {
+          "verificacao": "EdNet Q10 ρ parcial (diag + volume) — Aulas (vídeo/texto)",
+          "oficial": -0.0953,
+          "recalculado": -0.0953,
+          "confere": true
+        }
+      ]
+    }
+  },
+  "documentacao": {
+    "verificacoes": [
+      {
+        "valor": "ARES Q1 ρ",
+        "esperado": "+0,08",
+        "no_documento": true,
+        "no_readme": null
+      },
+      {
+        "valor": "EdNet Q1 n",
+        "esperado": "76.252",
+        "no_documento": true,
+        "no_readme": null
+      },
+      {
+        "valor": "EdNet Q1 ρ",
+        "esperado": "+0,15",
+        "no_documento": true,
+        "no_readme": true
+      },
+      {
+        "valor": "EdNet Q1 ρ parcial",
+        "esperado": "+0,14",
+        "no_documento": true,
+        "no_readme": null
+      },
+      {
+        "valor": "ARES Q4 leitura",
+        "esperado": "+0,31",
+        "no_documento": true,
+        "no_readme": true
+      },
+      {
+        "valor": "ARES Q4 navegação",
+        "esperado": "+0,24",
+        "no_documento": true,
+        "no_readme": null
+      },
+      {
+        "valor": "ARES Q4 feedback",
+        "esperado": "+0,14",
+        "no_documento": true,
+        "no_readme": null
+      },
+      {
+        "valor": "ARES Q4 Holm turmas",
+        "esperado": "0,54",
+        "no_documento": true,
+        "no_readme": null
+      },
+      {
+        "valor": "EdNet Q4 aulas",
+        "esperado": "+0,24",
+        "no_documento": true,
+        "no_readme": true
+      },
+      {
+        "valor": "EdNet Q4 explicações",
+        "esperado": "+0,06",
+        "no_documento": true,
+        "no_readme": null
+      },
+      {
+        "valor": "EdNet Q5 n",
+        "esperado": "42.720",
+        "no_documento": true,
+        "no_readme": null
+      },
+      {
+        "valor": "EdNet Q5 início",
+        "esperado": "63,6%",
+        "no_documento": true,
+        "no_readme": null
+      },
+      {
+        "valor": "EdNet Q5 fim",
+        "esperado": "64,6%",
+        "no_documento": true,
+        "no_readme": null
+      },
+      {
+        "valor": "EdNet Q5 ρ",
+        "esperado": "+0,04",
+        "no_documento": true,
+        "no_readme": true
+      },
+      {
+        "valor": "EdNet Q5 fluxo ≥1 fora do diag",
+        "esperado": "102.691",
+        "no_documento": true,
+        "no_readme": null
+      },
+      {
+        "valor": "ARES Q10 Holm tutorial",
+        "esperado": "0,054",
+        "no_documento": true,
+        "no_readme": true
+      },
+      {
+        "valor": "ARES Q10 Holm vocabulário",
+        "esperado": "0,38",
+        "no_documento": true,
+        "no_readme": null
+      },
+      {
+        "valor": "EdNet Q10 prática",
+        "esperado": "+0,16",
+        "no_documento": true,
+        "no_readme": null
+      },
+      {
+        "valor": "EdNet Q10 prática + volume",
+        "esperado": "+0,10",
+        "no_documento": true,
+        "no_readme": null
+      },
+      {
+        "valor": "EdNet Q10 explicações + volume",
+        "esperado": "+0,02",
+        "no_documento": true,
+        "no_readme": null
+      },
+      {
+        "valor": "EdNet Q10 prática % ativos",
+        "esperado": "88,9%",
+        "no_documento": true,
+        "no_readme": null
+      }
+    ],
+    "faltando": []
+  }
+}

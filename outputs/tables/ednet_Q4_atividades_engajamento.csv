@@ -1,0 +1,11 @@
+atividade,coluna,rho_bruto,p_bruto,rho_participacao_x_volume,rho_corrigido,p_corrigido,forca_corrigido,pct_uso_alto_eng,pct_uso_baixo_eng,p_corrigido_holm,p_corrigido_bh
+Prática por parte (sprint),src_sprint,0.5863,0.0,0.6507,-0.109,2.728974739543292e-292,fraca,98.6,83.6,1.0915898958173168e-291,3.898535342204703e-292
+Diagnóstico inicial,src_diagnosis,-0.7913,0.0,-0.8174,-0.0967,1.8407622955207371e-230,desprezível,84.6,92.8,5.522286886562212e-230,2.3009528694009216e-230
+Leitura de explicações (feedback),acessos_explicacao,0.7159,0.0,0.7375,0.0622,4.46324160093895e-96,desprezível,100.0,94.2,4.46324160093895e-96,4.46324160093895e-96
+Recomendação adaptativa,src_adaptive_offer,0.6469,0.0,0.6662,0.09,1.9164402641929523e-199,desprezível,88.3,8.9,3.8328805283859045e-199,2.1293780713255025e-199
+Quiz de revisão,src_review_quiz,0.4219,0.0,0.4243,0.1195,0.0,fraca,44.1,2.3,0.0,0.0
+Tutor,src_tutor,0.2412,0.0,0.2026,0.1531,0.0,fraca,22.3,0.6,0.0,0.0
+Revisão,src_review,0.275,0.0,0.2362,0.1645,0.0,fraca,26.6,0.6,0.0,0.0
+Caderno de erros/anotações,src_my_note,0.3103,0.0,0.2783,0.1744,0.0,fraca,71.5,18.2,0.0,0.0
+Questões salvas (arquivo),src_archive,0.4189,0.0,0.3605,0.2403,0.0,fraca,52.6,3.9,0.0,0.0
+Aulas (vídeo/texto),acessos_aula,0.5658,0.0,0.5169,0.2443,0.0,fraca,85.3,8.8,0.0,0.0

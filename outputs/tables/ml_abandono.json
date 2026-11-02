@@ -1,0 +1,493 @@
+{
+  "dados": {
+    "n_estudantes": 297915,
+    "taxa_abandono": 0.6249,
+    "classes": {
+      "abandono (1)": 186167,
+      "continuou (0)": 111748
+    },
+    "razao_desbalanceamento": 1.67,
+    "atributos": [
+      "questoes_diag",
+      "acertos_diag",
+      "acuracia_diag",
+      "eventos_diag",
+      "eventos_por_questao_diag",
+      "pulou_diagnostico",
+      "hora_inicio",
+      "dia_semana",
+      "mes_coorte"
+    ],
+    "faltantes_por_atributo": {
+      "acuracia_diag": 12256,
+      "eventos_por_questao_diag": 12256
+    },
+    "tratamento_faltantes": "acurácia e eventos/questão ficam indefinidos para quem pulou o diagnóstico (0 questões): imputação pela mediana do treino + indicador explícito `pulou_diagnostico`",
+    "excluidos_por_vazamento": [
+      "pct_mobile",
+      "tempo_medio_bloco_seg",
+      "n_sessoes",
+      "dias_ativos",
+      "tempo_estudo_min",
+      "acessos_*",
+      "src_* fora do diagnóstico"
+    ]
+  },
+  "abandono_por_questoes_diag": {
+    "0": {
+      "taxa": 0.0523,
+      "n": 12256
+    },
+    "1": {
+      "taxa": 0.9582,
+      "n": 10253
+    },
+    "2": {
+      "taxa": 0.9469,
+      "n": 7284
+    },
+    "3": {
+      "taxa": 0.9531,
+      "n": 6529
+    },
+    "4": {
+      "taxa": 0.9508,
+      "n": 7442
+    },
+    "5": {
+      "taxa": 0.9467,
+      "n": 12082
+    },
+    "6": {
+      "taxa": 0.9691,
+      "n": 69808
+    },
+    "7": {
+      "taxa": 0.3552,
+      "n": 71113
+    },
+    "8": {
+      "taxa": 0.5726,
+      "n": 24693
+    },
+    "9": {
+      "taxa": 0.6113,
+      "n": 20596
+    },
+    "10": {
+      "taxa": 0.6459,
+      "n": 30767
+    },
+    "11": {
+      "taxa": 0.1459,
+      "n": 20520
+    },
+    "12": {
+      "taxa": 0.343,
+      "n": 4572
+    }
+  },
+  "abandono_por_faixa": {
+    "0 (pulou)": {
+      "taxa": 0.0523,
+      "n": 12256
+    },
+    "11+": {
+      "taxa": 0.1818,
+      "n": 25092
+    },
+    "1–6": {
+      "taxa": 0.9622,
+      "n": 113398
+    },
+    "7–10": {
+      "taxa": 0.4883,
+      "n": 147169
+    }
+  },
+  "divisao": {
+    "treino": 238332,
+    "teste": 59583,
+    "subamostra_cv": 60000,
+    "estrategia": "holdout 80/20 estratificado; comparação de modelos por validação cruzada estratificada (5 dobras) numa subamostra de 60 mil estudantes do treino"
+  },
+  "comparacao_cv": {
+    "Baseline (classe majoritária)": {
+      "roc_auc": {
+        "media": 0.5,
+        "dp": 0.0
+      },
+      "pr_auc": {
+        "media": 0.6249,
+        "dp": 0.0
+      },
+      "acuracia": {
+        "media": 0.6249,
+        "dp": 0.0
+      },
+      "acuracia_balanceada": {
+        "media": 0.5,
+        "dp": 0.0
+      },
+      "f1": {
+        "media": 0.7692,
+        "dp": 0.0
+      },
+      "tempo_ajuste_s": 0.5
+    },
+    "Regressão Logística": {
+      "roc_auc": {
+        "media": 0.7876,
+        "dp": 0.006
+      },
+      "pr_auc": {
+        "media": 0.8737,
+        "dp": 0.0033
+      },
+      "acuracia": {
+        "media": 0.6824,
+        "dp": 0.0047
+      },
+      "acuracia_balanceada": {
+        "media": 0.6342,
+        "dp": 0.0055
+      },
+      "f1": {
+        "media": 0.765,
+        "dp": 0.0032
+      },
+      "tempo_ajuste_s": 1.5
+    },
+    "Árvore de Decisão": {
+      "roc_auc": {
+        "media": 0.8748,
+        "dp": 0.0042
+      },
+      "pr_auc": {
+        "media": 0.9181,
+        "dp": 0.0025
+      },
+      "acuracia": {
+        "media": 0.7878,
+        "dp": 0.0038
+      },
+      "acuracia_balanceada": {
+        "media": 0.7708,
+        "dp": 0.0038
+      },
+      "f1": {
+        "media": 0.8316,
+        "dp": 0.0038
+      },
+      "tempo_ajuste_s": 1.1
+    },
+    "Random Forest": {
+      "roc_auc": {
+        "media": 0.8841,
+        "dp": 0.0045
+      },
+      "pr_auc": {
+        "media": 0.9322,
+        "dp": 0.0026
+      },
+      "acuracia": {
+        "media": 0.7963,
+        "dp": 0.0034
+      },
+      "acuracia_balanceada": {
+        "media": 0.7891,
+        "dp": 0.0039
+      },
+      "f1": {
+        "media": 0.8338,
+        "dp": 0.0028
+      },
+      "tempo_ajuste_s": 34.1
+    },
+    "Gradient Boosting (HGB)": {
+      "roc_auc": {
+        "media": 0.8865,
+        "dp": 0.0041
+      },
+      "pr_auc": {
+        "media": 0.9336,
+        "dp": 0.0029
+      },
+      "acuracia": {
+        "media": 0.7978,
+        "dp": 0.0037
+      },
+      "acuracia_balanceada": {
+        "media": 0.7907,
+        "dp": 0.0038
+      },
+      "f1": {
+        "media": 0.835,
+        "dp": 0.0037
+      },
+      "tempo_ajuste_s": 6.8
+    }
+  },
+  "desbalanceamento": {
+    "sem ajuste": {
+      "limiar_0.5": {
+        "limiar": 0.5,
+        "acuracia": 0.7977,
+        "acuracia_balanceada": 0.7907,
+        "precisao": 0.8517,
+        "recall": 0.8189,
+        "especificidade": 0.7626,
+        "f1": 0.835,
+        "f1_macro": 0.7869,
+        "roc_auc": 0.8865,
+        "pr_auc": 0.9336,
+        "brier": 0.1316,
+        "matriz_confusao": {
+          "VN": 17162,
+          "FP": 5344,
+          "FN": 6791,
+          "VP": 30703
+        },
+        "classe_positiva": "abandono",
+        "n": 60000
+      },
+      "limiar_otimo": {
+        "limiar": 0.635,
+        "acuracia": 0.7884,
+        "acuracia_balanceada": 0.8084,
+        "precisao": 0.9157,
+        "recall": 0.7284,
+        "especificidade": 0.8883,
+        "f1": 0.8114,
+        "f1_macro": 0.7852,
+        "roc_auc": 0.8865,
+        "pr_auc": 0.9336,
+        "brier": 0.1316,
+        "matriz_confusao": {
+          "VN": 19993,
+          "FP": 2513,
+          "FN": 10184,
+          "VP": 27310
+        },
+        "classe_positiva": "abandono",
+        "n": 60000
+      }
+    },
+    "class_weight='balanced'": {
+      "limiar_0.5": {
+        "limiar": 0.5,
+        "acuracia": 0.7897,
+        "acuracia_balanceada": 0.8085,
+        "precisao": 0.9132,
+        "recall": 0.7331,
+        "especificidade": 0.8839,
+        "f1": 0.8133,
+        "f1_macro": 0.7862,
+        "roc_auc": 0.8865,
+        "pr_auc": 0.9339,
+        "brier": 0.1379,
+        "matriz_confusao": {
+          "VN": 19893,
+          "FP": 2613,
+          "FN": 10007,
+          "VP": 27487
+        },
+        "classe_positiva": "abandono",
+        "n": 60000
+      },
+      "limiar_otimo": {
+        "limiar": 0.5,
+        "acuracia": 0.7897,
+        "acuracia_balanceada": 0.8085,
+        "precisao": 0.9132,
+        "recall": 0.7331,
+        "especificidade": 0.8839,
+        "f1": 0.8133,
+        "f1_macro": 0.7862,
+        "roc_auc": 0.8865,
+        "pr_auc": 0.9339,
+        "brier": 0.1379,
+        "matriz_confusao": {
+          "VN": 19893,
+          "FP": 2613,
+          "FN": 10007,
+          "VP": 27487
+        },
+        "classe_positiva": "abandono",
+        "n": 60000
+      }
+    }
+  },
+  "grid_search": {
+    "melhores_parametros": {
+      "learning_rate": 0.1,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 20
+    },
+    "melhor_auc_cv": 0.8865,
+    "combinacoes": 8,
+    "tempo_s": 37.3
+  },
+  "limiar_decisao": {
+    "valor": 0.64,
+    "criterio": "máxima acurácia balanceada (Youden) em previsões fora da dobra do treino"
+  },
+  "teste": {
+    "limiar_0.5": {
+      "limiar": 0.5,
+      "acuracia": 0.8037,
+      "acuracia_balanceada": 0.7962,
+      "precisao": 0.8547,
+      "recall": 0.8264,
+      "especificidade": 0.7659,
+      "f1": 0.8403,
+      "f1_macro": 0.7928,
+      "roc_auc": 0.8913,
+      "pr_auc": 0.9369,
+      "brier": 0.1291,
+      "matriz_confusao": {
+        "VN": 17118,
+        "FP": 5232,
+        "FN": 6463,
+        "VP": 30770
+      },
+      "classe_positiva": "abandono",
+      "n": 59583
+    },
+    "limiar_escolhido": {
+      "limiar": 0.64,
+      "acuracia": 0.7909,
+      "acuracia_balanceada": 0.8103,
+      "precisao": 0.9158,
+      "recall": 0.7328,
+      "especificidade": 0.8878,
+      "f1": 0.8142,
+      "f1_macro": 0.7876,
+      "roc_auc": 0.8913,
+      "pr_auc": 0.9369,
+      "brier": 0.1291,
+      "matriz_confusao": {
+        "VN": 19843,
+        "FP": 2507,
+        "FN": 9949,
+        "VP": 27284
+      },
+      "classe_positiva": "abandono",
+      "n": 59583
+    },
+    "tempo_treino_s": 5.7
+  },
+  "teste_regressao_logistica": {
+    "limiar": 0.72,
+    "acuracia": 0.7182,
+    "acuracia_balanceada": 0.7638,
+    "precisao": 0.9475,
+    "recall": 0.5813,
+    "especificidade": 0.9464,
+    "f1": 0.7205,
+    "f1_macro": 0.7182,
+    "roc_auc": 0.7904,
+    "pr_auc": 0.8761,
+    "brier": 0.1839,
+    "matriz_confusao": {
+      "VN": 21152,
+      "FP": 1198,
+      "FN": 15591,
+      "VP": 21642
+    },
+    "classe_positiva": "abandono",
+    "n": 59583
+  },
+  "regra_simples_1a6_questoes": {
+    "limiar": 0.5,
+    "acuracia": 0.7291,
+    "acuracia_balanceada": 0.7756,
+    "precisao": 0.9627,
+    "recall": 0.5893,
+    "especificidade": 0.962,
+    "f1": 0.7311,
+    "f1_macro": 0.7291,
+    "roc_auc": 0.7756,
+    "pr_auc": 0.824,
+    "brier": 0.2709,
+    "matriz_confusao": {
+      "VN": 21500,
+      "FP": 850,
+      "FN": 15293,
+      "VP": 21940
+    },
+    "classe_positiva": "abandono",
+    "n": 59583
+  },
+  "auc_segmento_7mais_questoes": {
+    "n": 34331,
+    "taxa_abandono": 0.4416,
+    "roc_auc": 0.745
+  },
+  "validacao_temporal": {
+    "treino": "coortes até jun/2019",
+    "teste": "coortes de jul/2019 a nov/2019",
+    "n_treino": 204422,
+    "n_teste": 93493,
+    "metricas": {
+      "limiar": 0.64,
+      "acuracia": 0.7551,
+      "acuracia_balanceada": 0.7852,
+      "precisao": 0.9188,
+      "recall": 0.6748,
+      "especificidade": 0.8955,
+      "f1": 0.7781,
+      "f1_macro": 0.7524,
+      "roc_auc": 0.8617,
+      "pr_auc": 0.9143,
+      "brier": 0.146,
+      "matriz_confusao": {
+        "VN": 30438,
+        "FP": 3551,
+        "FN": 19350,
+        "VP": 40154
+      },
+      "classe_positiva": "abandono",
+      "n": 93493
+    }
+  },
+  "importancia_permutacao_auc": {
+    "questoes_diag": {
+      "media": 0.2665,
+      "dp": 0.002
+    },
+    "eventos_diag": {
+      "media": 0.0605,
+      "dp": 0.001
+    },
+    "mes_coorte": {
+      "media": 0.0268,
+      "dp": 0.001
+    },
+    "eventos_por_questao_diag": {
+      "media": 0.0047,
+      "dp": 0.0002
+    },
+    "acuracia_diag": {
+      "media": 0.0021,
+      "dp": 0.0004
+    },
+    "acertos_diag": {
+      "media": 0.0016,
+      "dp": 0.0003
+    },
+    "hora_inicio": {
+      "media": 0.0002,
+      "dp": 0.0
+    },
+    "dia_semana": {
+      "media": 0.0001,
+      "dp": 0.0001
+    },
+    "pulou_diagnostico": {
+      "media": 0.0,
+      "dp": 0.0
+    }
+  },
+  "modelo_salvo": "models/modelo_abandono.joblib"
+}

@@ -1,0 +1,252 @@
+{
+  "pre_resposta_bruto": {
+    "arquivo": "raw/pre_test_response.xlsx",
+    "linhas": 2520,
+    "colunas": [
+      "id",
+      "user_id",
+      "prompt",
+      "response",
+      "timestamp",
+      "correct"
+    ],
+    "nulos": {
+      "id": 0,
+      "user_id": 0,
+      "prompt": 0,
+      "response": 184,
+      "timestamp": 0,
+      "correct": 0
+    },
+    "duplicadas": 0
+  },
+  "pre_nota_bruto": {
+    "arquivo": "raw/pre_test_score.xlsx",
+    "linhas": 210,
+    "colunas": [
+      "user_id",
+      "score"
+    ],
+    "nulos": {
+      "user_id": 0,
+      "score": 0
+    },
+    "duplicadas": 0
+  },
+  "pre_limpeza": {
+    "linhas_resposta_sem_user_id_removidas": 0,
+    "respostas_em_branco_(contam_como_erro)": 184,
+    "valores_invalidos_em_correct": 0,
+    "user_id_duplicado_na_nota": 0,
+    "notas_fora_de_0_a_11": 0,
+    "questoes_por_aluno": {
+      "12": 210
+    },
+    "regra_nota_validada": "nota = acertos nas 12 questões exceto PreTestQ9",
+    "taxa_concordancia_nota_recalculada": 1.0,
+    "alunos_removidos_lista_autores": 25,
+    "alunos_validos": 185,
+    "acerto_por_questao": {
+      "PreTestQ1": 0.8,
+      "PreTestQ10-1": 0.41,
+      "PreTestQ10-2": 0.395,
+      "PreTestQ10-3": 0.281,
+      "PreTestQ2": 0.486,
+      "PreTestQ3": 0.414,
+      "PreTestQ4": 0.605,
+      "PreTestQ5": 0.476,
+      "PreTestQ6": 0.533,
+      "PreTestQ7": 0.338,
+      "PreTestQ8": 0.229,
+      "PreTestQ9": 0.29
+    }
+  },
+  "post_resposta_bruto": {
+    "arquivo": "raw/post_test_response.xlsx",
+    "linhas": 1980,
+    "colunas": [
+      "id",
+      "user_id",
+      "prompt",
+      "response",
+      "timestamp",
+      "correct"
+    ],
+    "nulos": {
+      "id": 0,
+      "user_id": 12,
+      "prompt": 0,
+      "response": 82,
+      "timestamp": 0,
+      "correct": 0
+    },
+    "duplicadas": 0
+  },
+  "post_nota_bruto": {
+    "arquivo": "raw/post_test_score.xlsx",
+    "linhas": 164,
+    "colunas": [
+      "user_id",
+      "score"
+    ],
+    "nulos": {
+      "user_id": 0,
+      "score": 0
+    },
+    "duplicadas": 0
+  },
+  "post_limpeza": {
+    "linhas_resposta_sem_user_id_removidas": 12,
+    "respostas_em_branco_(contam_como_erro)": 82,
+    "valores_invalidos_em_correct": 0,
+    "user_id_duplicado_na_nota": 0,
+    "notas_fora_de_0_a_11": 0,
+    "questoes_por_aluno": {
+      "12": 164
+    },
+    "regra_nota_validada": "nota = acertos nas 12 questões exceto PostTestQ9",
+    "taxa_concordancia_nota_recalculada": 1.0,
+    "alunos_removidos_lista_autores": 16,
+    "alunos_validos": 148,
+    "acerto_por_questao": {
+      "PostTestQ1": 0.732,
+      "PostTestQ10-1": 0.47,
+      "PostTestQ10-2": 0.354,
+      "PostTestQ10-3": 0.354,
+      "PostTestQ2": 0.567,
+      "PostTestQ3": 0.482,
+      "PostTestQ4": 0.579,
+      "PostTestQ5": 0.506,
+      "PostTestQ6": 0.512,
+      "PostTestQ7": 0.445,
+      "PostTestQ8": 0.409,
+      "PostTestQ9": 0.274
+    }
+  },
+  "motivacao_bruto": {
+    "arquivo": "raw/pre_motivation_score.xlsx",
+    "linhas": 177,
+    "colunas": [
+      "user_id",
+      "intrinsic_goal",
+      "extrinsic_goal",
+      "task_value",
+      "control_learning_beliefs",
+      "self_efficacy",
+      "test_anxiety"
+    ],
+    "nulos": {
+      "user_id": 0,
+      "intrinsic_goal": 0,
+      "extrinsic_goal": 0,
+      "task_value": 0,
+      "control_learning_beliefs": 0,
+      "self_efficacy": 0,
+      "test_anxiety": 0
+    },
+    "duplicadas": 0
+  },
+  "xapi_bruto": {
+    "arquivo": "raw/xapi_statement_student.xlsx",
+    "linhas": 124954,
+    "statements_anulados_(is_voided=t)": 0
+  },
+  "xapi_preprocessado": {
+    "arquivo": "preprocessed/xapi_statement_student.xlsx",
+    "linhas": 116168,
+    "colunas": [
+      "verb",
+      "object",
+      "timestamp",
+      "actor",
+      "context"
+    ],
+    "nulos": {
+      "verb": 0,
+      "object": 0,
+      "timestamp": 0,
+      "actor": 0,
+      "context": 0
+    },
+    "duplicadas": 2184
+  },
+  "xapi_limpeza": [
+    {
+      "passo": "remover duplicadas exatas",
+      "removidas": 2184,
+      "restantes": 113984
+    },
+    {
+      "passo": "remover nulos em actor/verb/timestamp",
+      "removidas": 0,
+      "restantes": 113984
+    },
+    {
+      "passo": "remover timestamp inválido/fora do período do estudo",
+      "removidas": 0,
+      "restantes": 113984
+    },
+    {
+      "passo": "remover contexto JSON inválido",
+      "removidas": 0,
+      "restantes": 113984
+    },
+    {
+      "passo": "remover atores que não são alunos válidos (professores, testes, admin, excluídos)",
+      "removidas": 9862,
+      "restantes": 104122
+    },
+    {
+      "passo": "remover eventos em páginas de professor/admin",
+      "removidas": 0,
+      "restantes": 104122
+    }
+  ],
+  "xapi_atores_removidos": {
+    "Teacher Ares": 4384,
+    "Test Ares": 1200,
+    "Yi": 1029,
+    "Isfy": 742,
+    "jww9": 372,
+    "Admin Kibi": 344,
+    "TBsn": 340,
+    "PUUy": 281,
+    "sEB8": 266,
+    "BjoernAisla": 232,
+    "chxiaobin": 151,
+    "rBXC": 122,
+    "s34W": 93,
+    "H3BV": 87,
+    "Mihwa2": 80,
+    "Mihwa": 79,
+    "Mihwa3": 31,
+    "Li Yuhang": 26,
+    "Xiaobin Test1": 3
+  },
+  "xapi_atores_removidos_total": 19,
+  "xapi_eventos_por_contexto": {
+    "aprendizagem": 92715,
+    "avaliacao (pré/pós-teste)": 6421,
+    "questionario": 4986
+  },
+  "xapi_verbos_alunos": {
+    "pressed": 44073,
+    "entered": 17624,
+    "focused": 14810,
+    "opened": 13666,
+    "exited": 6858,
+    "submitted": 4543,
+    "logged-in": 2293,
+    "enrolled": 224,
+    "unenrolled": 31
+  },
+  "base_final": {
+    "alunos_total": 192,
+    "com_pre": 185,
+    "com_pos": 148,
+    "com_pre_e_pos": 141,
+    "com_log_de_interacao": 192,
+    "com_pre_pos_e_log": 141,
+    "outliers_interacoes_IQR": 4
+  }
+}

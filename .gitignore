@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+data/raw/ares/ares_osf.zip
+outputs/tables/ednet_extract.log
+data/raw/ednet/
